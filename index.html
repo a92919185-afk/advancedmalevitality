@@ -90,12 +90,12 @@
 
         .text-accent { color: var(--accent-yellow); }
 
-        /* TITULO ULTRA GRANDE - Configurado para impacto máximo conforme a foto */
+        /* TITULO ULTRA GIGANTE - Aumentado conforme solicitado (4x impacto visual) */
         h1 { 
-            font-size: clamp(3.8rem, 13vw, 9.5rem); /* Aumentado drasticamente para ocupar a tela */
-            line-height: 0.82; /* Mais apertado para o visual profissional da foto */
+            font-size: clamp(4rem, 18vw, 16rem); /* Escala massiva para desktop */
+            line-height: 0.8; /* Mantido ultra apertado para o visual da foto */
             font-weight: 900; 
-            letter-spacing: -0.065em; /* Kernig mais agressivo */
+            letter-spacing: -0.07em; /* Kerning agressivo para o tamanho gigante */
             text-transform: uppercase;
         }
 
@@ -105,7 +105,7 @@
             .hero-image-right { order: 2; display: block !important; margin: 0 auto 3.5rem auto; width: 100%; max-width: 480px; }
             .hero-cta-group { order: 3; margin-bottom: 2.5rem; width: 100%; }
             .hero-desc { order: 4; width: 100%; font-size: 1.1rem; }
-            h1 { font-size: 4rem !important; line-height: 0.85 !important; }
+            h1 { font-size: 4.5rem !important; line-height: 0.85 !important; }
         }
     </style>
 </head>
@@ -132,13 +132,13 @@
 
     <main>
         <!-- Secção 1: Hero - Alinhamento e escala conforme foto -->
-        <section class="relative pt-12 md:pt-36 pb-20 md:pb-48 overflow-hidden">
-            <div class="container mx-auto px-6 relative z-10 max-w-7xl">
+        <section class="relative pt-12 md:pt-40 pb-20 md:pb-48 overflow-hidden">
+            <div class="container mx-auto px-6 relative z-10 max-w-[1400px]">
                 <div class="flex flex-col lg:flex-row items-start lg:items-center gap-12 lg:gap-16 hero-content">
                     
                     <!-- Coluna de Texto (Esquerda) -->
-                    <div class="w-full lg:w-[70%] reveal active">
-                        <h1 class="hero-title text-white mb-14">
+                    <div class="w-full lg:w-[75%] reveal active">
+                        <h1 class="hero-title text-white mb-16">
                             RECLAIM YOUR <br> <span class="text-accent">PRIMAL EDGE.</span>
                         </h1>
 
@@ -148,30 +148,30 @@
                         </div>
 
                         <!-- Grupo de CTAs: Ordem exata da foto -->
-                        <div class="hero-cta-group flex flex-col sm:flex-row gap-5 mb-12 w-full max-w-2xl">
+                        <div class="hero-cta-group flex flex-col sm:flex-row gap-6 mb-14 w-full max-w-2xl">
                             <!-- DTC Link -->
-                            <a href="https://mwebora.com/12200/207/7/?" class="cta-yellow flex-[1.6] flex items-center justify-between px-10 py-7 rounded-xl font-black uppercase tracking-widest text-[12px] group">
+                            <a href="https://mwebora.com/12200/207/7/?" class="cta-yellow flex-[1.6] flex items-center justify-between px-10 py-8 rounded-xl font-black uppercase tracking-widest text-[13px] group">
                                 <span>ORDER DIRECT - 38% OFF</span>
                                 <i data-feather="shopping-cart" class="w-6 h-6"></i>
                             </a>
                             <!-- VSL Link -->
-                            <a href="https://mwebora.com/12200/207/3/?" class="cta-vsl flex-1 flex items-center justify-between px-10 py-7 rounded-xl font-black uppercase tracking-widest text-[12px] group">
+                            <a href="https://mwebora.com/12200/207/3/?" class="cta-vsl flex-1 flex items-center justify-between px-10 py-8 rounded-xl font-black uppercase tracking-widest text-[13px] group">
                                 <span>WATCH VIDEO GUIDE</span>
                                 <i data-feather="play-circle" class="w-6 h-6"></i>
                             </a>
                         </div>
 
                         <!-- Descrição abaixo dos botões conforme foto -->
-                        <p class="hero-desc text-base md:text-2xl text-slate-500 leading-relaxed font-medium max-w-2xl">
+                        <p class="hero-desc text-base md:text-2xl text-slate-500 leading-relaxed font-medium max-w-3xl">
                             Designed for high-performance men who refuse to settle for average. SteelPower is the science-based protocol for metabolic energy and peak physical drive.
                         </p>
                     </div>
 
                     <!-- Coluna de Imagem (Direita Desktop) -->
-                    <div class="hidden lg:block w-full lg:w-[30%] reveal active">
+                    <div class="hidden lg:block w-full lg:w-[25%] reveal active">
                         <div class="relative float-animation">
                             <div class="absolute inset-0 bg-blue-500/5 rounded-full blur-[140px] opacity-30"></div>
-                            <img src="images/imgi_4_kit-6.png" onerror="this.src='https://via.placeholder.com/600x500/0f172a/fbbf24?text=SteelPower+Kit'" alt="SteelPower Premium Bundle" class="relative z-10 w-full max-w-[800px] ml-auto product-shadow-3d">
+                            <img src="images/imgi_4_kit-6.png" onerror="this.src='https://via.placeholder.com/600x500/0f172a/fbbf24?text=SteelPower+Kit'" alt="SteelPower Premium Bundle" class="relative z-10 w-full max-w-[850px] ml-auto product-shadow-3d">
                         </div>
                     </div>
 
