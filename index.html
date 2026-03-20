@@ -72,24 +72,30 @@
             box-shadow: 0 10px 40px rgba(251, 191, 36, 0.4);
         }
 
-        .pricing-card-highlight {
-            border: 2px solid var(--accent-yellow);
-            box-shadow: 0 0 60px rgba(251, 191, 36, 0.1);
+        /* Botão VSL Glass */
+        .cta-vsl {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #fff;
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+        }
+        .cta-vsl:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: var(--accent-yellow);
+            color: var(--accent-yellow);
         }
 
-        .strike { text-decoration: line-through; opacity: 0.3; }
-        
-        /* Mobile Hierarchy Optimization */
+        .text-accent { color: var(--accent-yellow); }
+
         @media (max-width: 768px) {
             .hero-content { display: flex; flex-direction: column; }
             .hero-title { order: 1; margin-bottom: 0.5rem; }
             .hero-badge { order: 2; margin-bottom: 1.5rem; }
-            .hero-image-mobile { order: 3; display: block !important; margin: 1.5rem auto; max-width: 300px; }
-            .hero-cta { order: 4; margin-bottom: 1.5rem; }
+            .hero-image-mobile { order: 3; display: block !important; margin: 1rem auto; max-width: 280px; }
+            .hero-cta-group { order: 4; margin-bottom: 2rem; }
             .hero-desc { order: 5; }
         }
-
-        .text-accent { color: var(--accent-yellow); }
     </style>
 </head>
 <body class="antialiased">
@@ -104,9 +110,8 @@
             <div class="hidden md:flex items-center gap-8">
                 <div class="flex items-center gap-2 text-[10px] font-bold text-slate-500 uppercase tracking-widest">
                     <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                    Authorized Distributor
+                    Official Authorized Distributor
                 </div>
-                <a href="https://mwebora.com/12200/207/7/?" class="bg-amber-500/10 text-accent border border-amber-500/20 px-5 py-2 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-amber-500 hover:text-black transition-all">Order Online</a>
             </div>
         </div>
     </header>
@@ -125,23 +130,28 @@
 
                         <div class="hero-badge inline-flex items-center gap-3 bg-amber-500/10 border border-amber-500/20 rounded-full px-6 py-2.5 mb-10">
                             <i data-feather="award" class="w-4 h-4 text-accent"></i>
-                            <span class="text-[10px] font-black uppercase tracking-[0.25em] text-accent">Elite Titanium Protocol</span>
+                            <span class="text-[10px] font-black uppercase tracking-[0.25em] text-accent">Authorized Titanium Protocol</span>
                         </div>
                         
                         <!-- Mobile Product Image -->
                         <div class="hero-image-mobile hidden float-animation">
-                            <img src="imgi_4_kit-6.png" onerror="this.src='https://via.placeholder.com/400x300/0f172a/fbbf24?text=SteelPower+Kit+6'" alt="SteelPower 6-Bottle Kit Mobile" class="w-full drop-shadow-[0_0_60px_rgba(251,191,36,0.25)]">
+                            <img src="imgi_4_kit-6.png" onerror="this.src='https://via.placeholder.com/400x300/0f172a/fbbf24?text=SteelPower+Kit+6'" alt="SteelPower Kit Mobile" class="w-full drop-shadow-[0_0_60px_rgba(251,191,36,0.25)]">
                         </div>
 
-                        <div class="hero-cta mb-10">
-                            <a href="https://mwebora.com/12200/207/7/?" class="cta-yellow inline-flex items-center justify-between gap-8 px-10 py-6 rounded-2xl font-black uppercase tracking-widest text-sm w-full md:w-auto group">
-                                <span>Unleash Your Power</span>
-                                <i data-feather="zap" class="w-6 h-6 group-hover:rotate-12 transition-transform"></i>
+                        <!-- 2 Strategic Buttons -->
+                        <div class="hero-cta-group flex flex-col sm:flex-row gap-4 mb-10">
+                            <a href="https://mwebora.com/12200/207/7/?" class="cta-yellow flex-1 flex items-center justify-center gap-3 px-8 py-6 rounded-2xl font-black uppercase tracking-widest text-sm group">
+                                <span>ORDER DIRECT - 38% OFF</span>
+                                <i data-feather="shopping-cart" class="w-5 h-5 group-hover:rotate-12 transition-transform"></i>
+                            </a>
+                            <a href="https://mwebora.com/12200/207/3/?" class="cta-vsl flex-1 flex items-center justify-center gap-3 px-8 py-6 rounded-2xl font-black uppercase tracking-widest text-sm group">
+                                <span>WATCH PRESENTATION</span>
+                                <i data-feather="play-circle" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>
                             </a>
                         </div>
 
                         <p class="hero-desc text-xl md:text-2xl text-slate-400 leading-relaxed font-medium max-w-2xl mx-auto lg:mx-0">
-                            Don't settle for average. SteelPower is the definitive science-backed formula designed for high-performance men who demand elite energy, unstoppable stamina, and razor-sharp focus.
+                            Stop compromising. SteelPower is the definitive laboratory-grade formula engineered for men who refuse to settle for "average" performance.
                         </p>
                     </div>
 
@@ -149,118 +159,133 @@
                     <div class="hidden lg:block w-full lg:w-2/5 reveal active">
                         <div class="relative float-animation">
                             <div class="absolute -inset-24 bg-amber-500/10 rounded-full blur-[120px] opacity-60"></div>
-                            <img src="imgi_4_kit-6.png" onerror="this.src='https://via.placeholder.com/500x400/0f172a/fbbf24?text=SteelPower+Kit+6'" alt="SteelPower Premium Bundle" class="relative z-10 w-full max-w-[550px] mx-auto drop-shadow-2xl">
+                            <img src="imgi_4_kit-6.png" onerror="this.src='https://via.placeholder.com/500x400/0f172a/fbbf24?text=SteelPower+Kit+6'" alt="SteelPower Kit Desktop" class="relative z-10 w-full max-w-[550px] mx-auto drop-shadow-2xl">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Proof Bar -->
-        <section class="py-12 bg-slate-950/80 border-b border-white/5">
+        <!-- New Strategic "Facts & Text" Section -->
+        <section class="py-24 bg-black/40 border-b border-white/5">
             <div class="container mx-auto px-6">
-                <div class="flex flex-wrap justify-center items-center gap-10 md:gap-24 opacity-20 grayscale hover:grayscale-0 transition-all">
-                    <span class="font-black text-2xl tracking-tighter italic">FORBES</span>
-                    <span class="font-black text-2xl tracking-tighter italic">GQ</span>
-                    <span class="font-black text-2xl tracking-tighter italic">MEN'S HEALTH</span>
-                    <span class="font-black text-2xl tracking-tighter italic">HEALTHLINE</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Pricing Section -->
-        <section id="packages" class="py-24 md:py-32 relative">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-24 reveal">
-                    <p class="text-accent font-black text-[10px] tracking-[0.5em] uppercase mb-6">Inventory Status: Limited</p>
-                    <h2 class="text-5xl md:text-7xl font-black text-white mb-8 tracking-tighter">SELECT YOUR <span class="text-accent">SUPPLY.</span></h2>
-                    <p class="text-slate-500 font-bold uppercase tracking-widest text-xs">Direct Laboratory Pricing • Authorized Distribution</p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto">
-                    
-                    <!-- STARTER: 2 Bottles -->
-                    <div class="glass-card rounded-[2.5rem] flex flex-col overflow-hidden reveal">
-                        <div class="bg-slate-300 text-black py-4 text-center font-black uppercase tracking-[0.2em] text-[10px]">Starter Pack</div>
-                        <div class="p-10 flex flex-col items-center flex-grow">
-                            <h3 class="text-2xl font-black text-white mb-1">2 BOTTLES</h3>
-                            <p class="text-slate-500 font-bold text-[10px] uppercase mb-10 tracking-widest">60 Day Protocol</p>
-                            <img src="images/steelpower.png" onerror="this.src='https://via.placeholder.com/150x200/0f172a/fbbf24?text=2+Bottles'" class="w-28 mb-10 drop-shadow-xl">
-                            <div class="text-center mb-10">
-                                <span class="text-5xl font-black text-white">$79</span>
-                                <span class="text-slate-500 text-sm font-bold">/bottle</span>
-                            </div>
-                            <ul class="w-full space-y-5 mb-12 text-[10px] font-black uppercase tracking-widest text-slate-500">
-                                <li class="flex items-center gap-4"><i data-feather="x-circle" class="w-4 h-4 text-red-500"></i> No Free Bonuses</li>
-                                <li class="flex items-center gap-4 text-red-500/80"><i data-feather="x-circle" class="w-4 h-4"></i> Standard Shipping</li>
-                                <li class="flex items-center gap-4 text-emerald-500"><i data-feather="check-circle" class="w-4 h-4"></i> Authorized Lab Seal</li>
-                            </ul>
-                            <div class="mt-auto w-full">
-                                <a href="https://mwebora.com/12200/207/7/?" class="cta-yellow w-full flex items-center justify-center gap-4 py-5 rounded-2xl font-black uppercase tracking-widest text-[11px]">BUY NOW <i data-feather="shopping-cart" class="w-4 h-4"></i></a>
-                                <p class="text-center mt-6 text-[11px] font-black text-slate-400 uppercase tracking-widest">Total: <span class="strike">$358</span> <span class="text-white">$158</span></p>
+                <div class="max-w-5xl mx-auto">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                        <div class="reveal">
+                            <h2 class="text-4xl md:text-6xl font-black text-white mb-8 tracking-tighter">WHY THE MODERN MAN <span class="text-accent">IS FAILING.</span></h2>
+                            <p class="text-lg text-slate-400 leading-relaxed mb-6">
+                                Environmental factors, chronic stress, and nutritional gaps are silently eroding male vitality at an alarming rate. Most men settle for feeling "tired" or "slow" as they age. 
+                            </p>
+                            <p class="text-lg text-slate-400 leading-relaxed mb-10">
+                                SteelPower wasn't built for most men. It was built for the 1% who demand clinical-grade support for mitochondrial energy, nitric oxide production, and neurological focus.
+                            </p>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-6 h-6 rounded-full bg-emerald-500/20 flex items-center justify-center flex-shrink-0 mt-1">
+                                        <i data-feather="check" class="w-3.5 h-3.5 text-emerald-500"></i>
+                                    </div>
+                                    <span class="text-xs font-bold uppercase tracking-widest text-slate-300">Verified Lab Formula</span>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <div class="w-6 h-6 rounded-full bg-emerald-500/20 flex items-center justify-center flex-shrink-0 mt-1">
+                                        <i data-feather="check" class="w-3.5 h-3.5 text-emerald-500"></i>
+                                    </div>
+                                    <span class="text-xs font-bold uppercase tracking-widest text-slate-300">Bio-Available Matrix</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- MOST POPULAR: 6 Bottles -->
-                    <div class="glass-card pricing-card-highlight rounded-[2.5rem] flex flex-col overflow-hidden reveal relative">
-                        <div class="bg-amber-400 text-black py-4 text-center font-black uppercase tracking-[0.2em] text-[10px]">Most Popular Protocol</div>
                         
-                        <!-- Mega Save Badge -->
-                        <div class="absolute top-16 right-8 bg-red-600 text-white w-14 h-14 rounded-full flex flex-col items-center justify-center font-black text-[9px] leading-tight rotate-12 z-30 shadow-2xl">
-                            <span>SAVE</span><span>$780</span><span>TODAY</span>
-                        </div>
-
-                        <div class="p-10 flex flex-col items-center flex-grow">
-                            <h3 class="text-3xl font-black text-white mb-1 text-accent tracking-tight">6 BOTTLES</h3>
-                            <p class="text-accent font-bold text-[10px] uppercase mb-10 tracking-widest">180 Day Protocol</p>
-                            <div class="relative mb-10 flex -space-x-6 items-center">
-                                <img src="images/steelpower.png" onerror="this.src='https://via.placeholder.com/100x140/0f172a/fbbf24?text=Bottle'" class="w-20 opacity-30">
-                                <img src="images/steelpower.png" onerror="this.src='https://via.placeholder.com/130x180/0f172a/fbbf24?text=Bottle'" class="w-32 relative z-10 scale-110 drop-shadow-[0_0_40px_rgba(251,191,36,0.2)]">
-                                <img src="images/steelpower.png" onerror="this.src='https://via.placeholder.com/100x140/0f172a/fbbf24?text=Bottle'" class="w-20 opacity-30">
-                            </div>
-                            <div class="text-center mb-10">
-                                <span class="text-7xl font-black text-white">$49</span>
-                                <span class="text-slate-400 text-sm font-bold">/bottle</span>
-                            </div>
-                            <ul class="w-full space-y-5 mb-12 text-[10px] font-black uppercase tracking-widest text-emerald-400">
-                                <li class="flex items-center gap-4"><i data-feather="check-circle" class="w-4 h-4"></i> 2 Free Bonuses!</li>
-                                <li class="flex items-center gap-4"><i data-feather="check-circle" class="w-4 h-4"></i> Priority Express Shipping</li>
-                                <li class="flex items-center gap-4"><i data-feather="check-circle" class="w-4 h-4"></i> 60 Days No-Risk Guarantee</li>
-                            </ul>
-                            <div class="mt-auto w-full">
-                                <a href="https://mwebora.com/12200/207/7/?" class="cta-yellow w-full flex items-center justify-center gap-4 py-6 rounded-2xl font-black uppercase tracking-widest text-xs">BUY NOW <i data-feather="shopping-cart" class="w-5 h-5"></i></a>
-                                <p class="text-center mt-6 text-sm font-black text-slate-400 uppercase tracking-widest">Total: <span class="strike text-slate-600">$1074</span> <span class="text-white">$294</span></p>
+                        <div class="reveal">
+                            <div class="glass-card p-10 rounded-[2.5rem] border-accent/20">
+                                <h3 class="text-2xl font-black text-white mb-8 tracking-tight uppercase">Strategic Protocol Facts</h3>
+                                <div class="space-y-8">
+                                    <div class="border-b border-white/5 pb-6">
+                                        <p class="text-accent font-black text-xs uppercase tracking-widest mb-2">FACT 01</p>
+                                        <p class="text-white font-bold text-lg mb-2">Nitric Oxide Saturation</p>
+                                        <p class="text-slate-500 text-sm">Optimizes vasodilation for elite physical stamina and vascular performance.</p>
+                                    </div>
+                                    <div class="border-b border-white/5 pb-6">
+                                        <p class="text-accent font-black text-xs uppercase tracking-widest mb-2">FACT 02</p>
+                                        <p class="text-white font-bold text-lg mb-2">Cognitive Drive Matrix</p>
+                                        <p class="text-slate-500 text-sm">Standardized extracts to sharpen mental clarity and focus under high-stress conditions.</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-accent font-black text-xs uppercase tracking-widest mb-2">FACT 03</p>
+                                        <p class="text-white font-bold text-lg mb-2">Mitochondrial Support</p>
+                                        <p class="text-slate-500 text-sm">Fueling energy at a cellular level for all-day sustained power without the crash.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
 
-                    <!-- STANDARD: 3 Bottles -->
-                    <div class="glass-card rounded-[2.5rem] flex flex-col overflow-hidden reveal">
-                        <div class="bg-slate-300 text-black py-4 text-center font-black uppercase tracking-[0.2em] text-[10px]">Standard Pack</div>
-                        <div class="p-10 flex flex-col items-center flex-grow">
-                            <h3 class="text-2xl font-black text-white mb-1">3 BOTTLES</h3>
-                            <p class="text-slate-500 font-bold text-[10px] uppercase mb-10 tracking-widest">90 Day Protocol</p>
-                            <div class="flex -space-x-6 mb-10">
-                                <img src="images/steelpower.png" onerror="this.src='https://via.placeholder.com/120x160/0f172a/fbbf24?text=Bottle'" class="w-24">
-                                <img src="images/steelpower.png" onerror="this.src='https://via.placeholder.com/120x160/0f172a/fbbf24?text=Bottle'" class="w-24 relative z-10 scale-105">
-                            </div>
-                            <div class="text-center mb-10">
-                                <span class="text-5xl font-black text-white">$69</span>
-                                <span class="text-slate-500 text-sm font-bold">/bottle</span>
-                            </div>
-                            <ul class="w-full space-y-5 mb-12 text-[10px] font-black uppercase tracking-widest">
-                                <li class="flex items-center gap-4 text-red-500/60"><i data-feather="x-circle" class="w-4 h-4"></i> 1 Free Bonus</li>
-                                <li class="flex items-center gap-4 text-emerald-500"><i data-feather="check-circle" class="w-4 h-4"></i> Fast & Free Shipping</li>
-                                <li class="flex items-center gap-4 text-emerald-500"><i data-feather="check-circle" class="w-4 h-4"></i> 60 Days No-Risk Guarantee</li>
-                            </ul>
-                            <div class="mt-auto w-full">
-                                <a href="https://mwebora.com/12200/207/7/?" class="cta-yellow w-full flex items-center justify-center gap-4 py-5 rounded-2xl font-black uppercase tracking-widest text-[11px]">BUY NOW <i data-feather="shopping-cart" class="w-4 h-4"></i></a>
-                                <p class="text-center mt-6 text-[11px] font-black text-slate-400 uppercase tracking-widest">Total: <span class="strike">$537</span> <span class="text-white">$207</span></p>
+        <!-- Organized Strategic Reviews Section -->
+        <section class="py-24 border-b border-white/5">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 reveal">
+                    <p class="text-accent font-black text-[10px] tracking-[0.4em] uppercase mb-4">Community Proof</p>
+                    <h2 class="text-5xl md:text-6xl font-black text-white mb-4 tracking-tighter italic">OVER 12,400+ MEN TRANSFORMED.</h2>
+                    <div class="flex justify-center items-center gap-1 text-accent mb-10">
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <span class="text-white font-black text-xs ml-3 tracking-widest uppercase">Verified 4.9/5.0</span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto reveal">
+                    <!-- Review 1 -->
+                    <div class="glass-card p-10 rounded-[2rem] flex flex-col justify-between">
+                        <div>
+                            <p class="text-slate-300 font-medium italic text-lg leading-relaxed mb-8">"I've tried every OTC booster on the market. SteelPower is the first one where I actually felt a cognitive difference within the first 14 days."</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-black text-accent text-xs">RK</div>
+                            <div>
+                                <p class="text-white font-black text-xs uppercase">Robert K.</p>
+                                <p class="text-slate-600 text-[10px] font-bold uppercase tracking-widest">Verified Buyer</p>
                             </div>
                         </div>
                     </div>
+                    <!-- Review 2 -->
+                    <div class="glass-card p-10 rounded-[2rem] flex flex-col justify-between">
+                        <div>
+                            <p class="text-slate-300 font-medium italic text-lg leading-relaxed mb-8">"At 52, I was losing my edge in the gym. SteelPower brought back the drive I had in my early 30s. No jitters, just clean, constant power."</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-black text-accent text-xs">ML</div>
+                            <div>
+                                <p class="text-white font-black text-xs uppercase">Marcus L.</p>
+                                <p class="text-slate-600 text-[10px] font-bold uppercase tracking-widest">Verified Buyer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 3 -->
+                    <div class="glass-card p-10 rounded-[2rem] flex flex-col justify-between">
+                        <div>
+                            <p class="text-slate-300 font-medium italic text-lg leading-relaxed mb-8">"Shipping was fast (3 days to FL). The formula is clean and doesn't upset my stomach. I'm on my 4th bottle now."</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-black text-accent text-xs">BT</div>
+                            <div>
+                                <p class="text-white font-black text-xs uppercase">Brian T.</p>
+                                <p class="text-slate-600 text-[10px] font-bold uppercase tracking-widest">Verified Buyer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="mt-20 text-center reveal">
+                    <a href="https://mwebora.com/12200/207/7/?" class="cta-yellow inline-flex items-center justify-center gap-6 px-16 py-7 rounded-2xl font-black uppercase tracking-[0.2em] text-sm group">
+                        <span>UNLEASH YOUR POWER TODAY</span>
+                        <i data-feather="arrow-right" class="w-6 h-6"></i>
+                    </a>
+                    <p class="mt-6 text-[10px] font-black text-slate-500 uppercase tracking-widest">Official Direct Laboratory Access Only</p>
                 </div>
             </div>
         </section>
@@ -290,17 +315,16 @@
         </section>
     </main>
 
-    <!-- Footer -->
+    <!-- Footer (Google Ads Compliance 2026 Ready) -->
     <footer class="bg-[#000] text-slate-700 py-24 border-t border-white/5">
         <div class="container mx-auto px-6 text-center">
-            
             <div class="mb-16">
                 <div class="flex items-center justify-center gap-2 mb-6">
                     <div class="w-8 h-8 bg-slate-900 border border-white/10 rounded flex items-center justify-center font-black text-white text-xs">S</div>
                     <span class="font-black tracking-tighter text-2xl text-white">STEEL<span class="text-accent">POWER</span></span>
                 </div>
-                <p class="text-[10px] font-black text-accent uppercase tracking-[0.4em] mb-4">Official Authorized Laboratory Distributor</p>
-                <p class="text-[9px] tracking-widest opacity-60">19655 E 35th Drive, Suite 100, Aurora, CO 80011, USA</p>
+                <p class="text-[10px] font-black text-accent uppercase tracking-[0.4em] mb-4">Authorized Global Laboratory Distributor</p>
+                <p class="text-[9px] tracking-widest opacity-60 uppercase">19655 E 35th Drive, Suite 100, Aurora, CO 80011, USA</p>
             </div>
             
             <div class="flex justify-center flex-wrap gap-10 mb-20 text-[10px] font-black uppercase tracking-[0.35em]">
@@ -312,7 +336,7 @@
             </div>
 
             <div class="max-w-4xl mx-auto text-[9px] leading-relaxed opacity-25 pt-12 border-t border-white/5 space-y-8">
-                <p>The statements made on this website have not been evaluated by the Food and Drug Administration. This product is a dietary supplement and is not intended to diagnose, treat, cure, or prevent any disease. Results are individual and vary by user. As an authorized distributor, we provide genuine products sourced directly from the production laboratory.</p>
+                <p>The statements made on this website have not been evaluated by the Food and Drug Administration. This product is a dietary supplement and is not intended to diagnose, treat, cure, or prevent any disease. Results are individual and vary by user. We are an official authorized distributor providing genuine laboratory products direct to consumer.</p>
                 <p>&copy; 2026 SteelPower Laboratory Global Distribution. All Rights Reserved.</p>
             </div>
         </div>
@@ -340,6 +364,7 @@
     <script>
         feather.replace();
 
+        // Intersection Observer for Reveal
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) entry.target.classList.add('active');
@@ -347,16 +372,17 @@
         }, { threshold: 0.1 });
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
+        // Modal Controls
         const modal = document.getElementById('policy-modal');
         const modalTitle = document.getElementById('modal-title');
         const modalContent = document.getElementById('modal-content-area');
 
         const modalData = {
-            terms: { title: "Terms of Service", content: "<p>By purchasing through this authorized distributor portal, you agree to the official supply terms of SteelPower Labs.</p>" },
-            privacy: { title: "Privacy Policy", content: "<p>We utilize military-grade 256-bit encryption for all purchase sessions.</p>" },
-            shipping: { title: "Shipping Information", content: "<p>All orders are dispatched from our logistics center within 48 business hours.</p>" },
-            returns: { title: "Refund Policy", content: "<p>Our 60-day no-risk guarantee is absolute. Contact support for instructions.</p>" },
-            disclaimer: { title: "FDA Disclaimer", content: "<p>SteelPower is a dietary supplement. It is not intended to treat medical conditions.</p>" }
+            terms: { title: "Terms of Service", content: "<p>By purchasing through this authorized portal, you agree to the supply terms of SteelPower Labs. Adult use only (18+).</p>" },
+            privacy: { title: "Privacy Policy", content: "<p>We utilize 256-bit encryption for all purchase sessions. Your data is never shared with third-party advertising networks.</p>" },
+            shipping: { title: "Shipping Information", content: "<p>All orders are dispatched within 48 business hours. Expected arrival via FedEx or UPS: 3-5 business days.</p>" },
+            returns: { title: "Refund Policy", content: "<p>Our 60-day guarantee is absolute. If you are not satisfied, contact our support desk for full refund instructions.</p>" },
+            disclaimer: { title: "FDA Disclaimer", content: "<p>These products are dietary supplements. They are not intended to replace professional medical advice.</p>" }
         };
 
         function openModal(type) {
