@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
+    <!-- Tracking Script (Kavro) -->
+    <script src="https://cdn.kavrocdn.com/code/8300-8a07c3e0-1826-4e51-b73c-f5ddb3ea59fe"></script>
+
     <!-- SEO & Metadata - US Market Elite -->
     <title>SteelPower | Reclaim Your Primal Edge - Official Authorized Distributor</title>
     <meta name="description" content="The definitive protocol for elite male vitality. Engineered for strength, stamina, and mental drive. Authorized distributor. Save up to $780 today.">
@@ -125,7 +128,7 @@
                             <span class="text-[10px] font-black uppercase tracking-[0.25em] text-accent">Elite Titanium Protocol</span>
                         </div>
                         
-                        <!-- Mobile Product Image (Request: Kit 6 potes alinhado mobile) -->
+                        <!-- Mobile Product Image -->
                         <div class="hero-image-mobile hidden float-animation">
                             <img src="imgi_4_kit-6.png" onerror="this.src='https://via.placeholder.com/400x300/0f172a/fbbf24?text=SteelPower+Kit+6'" alt="SteelPower 6-Bottle Kit Mobile" class="w-full drop-shadow-[0_0_60px_rgba(251,191,36,0.25)]">
                         </div>
@@ -165,7 +168,7 @@
             </div>
         </section>
 
-        <!-- Pricing Section (Design Fiel à Imagem Solicitada) -->
+        <!-- Pricing Section -->
         <section id="packages" class="py-24 md:py-32 relative">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-24 reveal">
@@ -287,7 +290,7 @@
         </section>
     </main>
 
-    <!-- Footer (Google Ads Compliance 2026 Ready) -->
+    <!-- Footer -->
     <footer class="bg-[#000] text-slate-700 py-24 border-t border-white/5">
         <div class="container mx-auto px-6 text-center">
             
@@ -298,7 +301,6 @@
                 </div>
                 <p class="text-[10px] font-black text-accent uppercase tracking-[0.4em] mb-4">Official Authorized Laboratory Distributor</p>
                 <p class="text-[9px] tracking-widest opacity-60">19655 E 35th Drive, Suite 100, Aurora, CO 80011, USA</p>
-                <p class="text-[9px] tracking-widest opacity-60 mt-1">Authorized Dispatch Center • Denver Logistics</p>
             </div>
             
             <div class="flex justify-center flex-wrap gap-10 mb-20 text-[10px] font-black uppercase tracking-[0.35em]">
@@ -310,7 +312,7 @@
             </div>
 
             <div class="max-w-4xl mx-auto text-[9px] leading-relaxed opacity-25 pt-12 border-t border-white/5 space-y-8">
-                <p>The statements made on this website have not been evaluated by the Food and Drug Administration. This product is a dietary supplement and is not intended to diagnose, treat, cure, or prevent any disease. Results are individual and vary by user. As an authorized distributor, we provide genuine products sourced directly from the production laboratory and held in climate-controlled facilities.</p>
+                <p>The statements made on this website have not been evaluated by the Food and Drug Administration. This product is a dietary supplement and is not intended to diagnose, treat, cure, or prevent any disease. Results are individual and vary by user. As an authorized distributor, we provide genuine products sourced directly from the production laboratory.</p>
                 <p>&copy; 2026 SteelPower Laboratory Global Distribution. All Rights Reserved.</p>
             </div>
         </div>
@@ -328,7 +330,7 @@
                     </div>
                     <div class="p-12 overflow-y-auto max-h-[60vh] text-xs text-slate-400 leading-relaxed" id="modal-content-area"></div>
                     <div class="px-10 py-8 bg-black/40 border-t border-white/5 flex justify-end">
-                        <button onclick="closeModal()" class="bg-accent text-black px-10 py-4 rounded-xl text-[10px] font-black uppercase tracking-widest hover:scale-105 transition-transform">Close Window</button>
+                        <button onclick="closeModal()" class="bg-accent text-black px-10 py-4 rounded-xl text-[10px] font-black uppercase tracking-widest">Close Window</button>
                     </div>
                 </div>
             </div>
@@ -338,7 +340,6 @@
     <script>
         feather.replace();
 
-        // Intersection Observer for Reveal
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) entry.target.classList.add('active');
@@ -346,17 +347,16 @@
         }, { threshold: 0.1 });
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-        // Modal Controls
         const modal = document.getElementById('policy-modal');
         const modalTitle = document.getElementById('modal-title');
         const modalContent = document.getElementById('modal-content-area');
 
         const modalData = {
-            terms: { title: "Terms of Service", content: "<p>By purchasing through this authorized distributor portal, you agree to the official supply terms of SteelPower Labs. Products are for adult use only (18+). Elite performance results depend on consistent daily use as part of a healthy protocol.</p>" },
-            privacy: { title: "Privacy Policy", content: "<p>We utilize military-grade 256-bit encryption for all purchase sessions. Your biometric and personal data is never shared with third-party advertising networks. We comply with CCPA and GDPR standards.</p>" },
-            shipping: { title: "Shipping Information", content: "<p>All orders are dispatched from our Denver logistics center within 48 business hours. Expected arrival via FedEx or UPS: 3-5 business days for domestic US orders.</p>" },
-            returns: { title: "Refund Policy", content: "<p>Our 60-day no-risk guarantee is absolute. If you are not satisfied with your vitality gains, contact our support desk for a full refund instructions. No hoops, just results.</p>" },
-            disclaimer: { title: "FDA Disclaimer", content: "<p>The info on this site is for educational purposes. SteelPower is a dietary supplement. It is not a drug and is not intended to treat medical conditions. Consult your doctor before starting any performance protocol.</p>" }
+            terms: { title: "Terms of Service", content: "<p>By purchasing through this authorized distributor portal, you agree to the official supply terms of SteelPower Labs.</p>" },
+            privacy: { title: "Privacy Policy", content: "<p>We utilize military-grade 256-bit encryption for all purchase sessions.</p>" },
+            shipping: { title: "Shipping Information", content: "<p>All orders are dispatched from our logistics center within 48 business hours.</p>" },
+            returns: { title: "Refund Policy", content: "<p>Our 60-day no-risk guarantee is absolute. Contact support for instructions.</p>" },
+            disclaimer: { title: "FDA Disclaimer", content: "<p>SteelPower is a dietary supplement. It is not intended to treat medical conditions.</p>" }
         };
 
         function openModal(type) {
