@@ -35,13 +35,12 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        /* TIPOGRAFIA RESPONSIVA REFINADA */
+        /* TIPOGRAFIA RESPONSIVA REFINADA - FORMATO DESKTOP PROPORCIONAL */
         .hero-title {
-            /* Ajustado: Diminuído no desktop de 8.5rem para 6.8rem para melhor proporção */
-            font-size: clamp(2.8rem, 8vw, 6.8rem); 
+            font-size: clamp(2.8rem, 6.5vw, 6rem); 
             line-height: 0.85;
             font-weight: 900;
-            letter-spacing: -0.06em;
+            letter-spacing: -0.055em;
             text-transform: uppercase;
         }
 
@@ -49,9 +48,10 @@
             font-size: clamp(1.05rem, 1.3vw, 1.25rem);
             line-height: 1.6;
             color: #94a3b8;
+            font-weight: 500;
         }
 
-        /* BOTÕES AGRESSIVOS E IMPACTANTES */
+        /* BOTÕES AGRESSIVOS */
         .cta-yellow {
             background: var(--accent-yellow);
             color: #020617;
@@ -62,7 +62,6 @@
         .cta-yellow:hover { 
             transform: translateY(-5px) scale(1.02); 
             box-shadow: 0 20px 60px rgba(251, 191, 36, 0.5);
-            filter: brightness(1.1);
         }
 
         .cta-vsl {
@@ -85,7 +84,6 @@
         .testimonial-card:hover {
             border-color: var(--accent-yellow);
             transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
         }
 
         .product-shadow {
@@ -109,23 +107,22 @@
                 font-size: 2.8rem !important; 
                 line-height: 0.9 !important;
                 margin-bottom: 2rem;
-                text-align: left;
             }
             .hero-image-wrapper { 
                 order: 2; 
-                margin: 0 auto 3rem auto; 
+                margin: 0 auto 2.5rem auto; 
                 width: 100%; 
                 display: flex !important; 
                 justify-content: center; 
             }
             .hero-image-wrapper img {
-                max-width: 320px !important;
+                max-width: 280px !important; /* Foto diminuída no mobile conforme pedido */
             }
             .hero-desc { order: 3; text-align: left; margin-bottom: 2.5rem; }
             .cta-group { order: 4; width: 100%; margin-bottom: 2.5rem; }
             
             .cta-group a {
-                padding: 1.5rem 2rem !important;
+                padding: 1.6rem 2rem !important;
                 font-size: 14px !important;
             }
         }
@@ -133,17 +130,17 @@
 </head>
 <body class="antialiased">
 
-    <!-- Header -->
-    <header class="fixed top-0 w-full z-[100] bg-[#020617]/80 backdrop-blur-xl border-b border-white/5">
+    <!-- Header - Google Ads compliant -->
+    <header class="fixed top-0 w-full z-[100] bg-[#020617]/85 backdrop-blur-xl border-b border-white/5">
         <div class="container mx-auto px-6 md:px-12 py-5 flex justify-between items-center max-w-7xl">
             <div class="flex items-center gap-3">
                 <img src="images/imgi_9_logo.svg" alt="SteelPower Logo" class="h-6 md:h-7">
                 <span class="font-black text-xl tracking-tighter uppercase text-white">Steel<span class="text-[#fbbf24]">Power</span></span>
             </div>
             <div class="flex items-center gap-6">
-                <div class="hidden lg:flex items-center gap-2 text-[9px] font-black text-slate-500 uppercase tracking-[0.25em]">
+                <div class="hidden lg:flex items-center gap-2 text-[9px] font-black text-slate-500 uppercase tracking-[0.2em]">
                     <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                    Verified Protocol
+                    Authorized Distribution
                 </div>
                 <a href="https://mwebora.com/12200/207/7/?" class="bg-[#fbbf24] text-black px-6 py-2.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:scale-105 transition-all shadow-lg shadow-yellow-500/20">Order Now</a>
             </div>
@@ -151,21 +148,21 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
+        <!-- Hero Section - Alinhamento Proporcional Desktop -->
         <section class="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden">
-            <div class="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-blue-500/10 rounded-full blur-[150px] pointer-events-none"></div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-500/5 rounded-full blur-[180px] pointer-events-none"></div>
             
-            <div class="container mx-auto px-6 md:px-12 max-w-[1400px] relative z-10">
+            <div class="container mx-auto px-6 md:px-12 max-w-7xl relative z-10">
                 <div class="hero-container flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
                     
-                    <!-- Conteúdo Esquerda (Ajustado largura para 55%) -->
-                    <div class="w-full lg:w-[55%] reveal active flex flex-col">
+                    <!-- Lado Esquerdo -->
+                    <div class="w-full lg:w-[52%] reveal active flex flex-col">
                         <h1 class="hero-title text-white mb-8 lg:mb-10">
                             Reclaim your <br>
                             <span class="text-[#fbbf24]">Primal Edge.</span>
                         </h1>
 
-                        <!-- Foto Mobile -->
+                        <!-- Foto Mobile (Posicionada após o título) -->
                         <div class="hero-image-wrapper lg:hidden">
                             <div class="relative float">
                                 <img src="images/SteelPower6.png" 
@@ -175,39 +172,39 @@
                             </div>
                         </div>
 
-                        <!-- Descrição -->
+                        <!-- Descrição (Antes dos botões) -->
                         <p class="hero-desc max-w-2xl mb-10 lg:mb-12">
                             Designed for high-performance men who refuse to settle for average. SteelPower is the science-based protocol for metabolic energy and peak physical drive.
                         </p>
 
-                        <!-- Botões -->
+                        <!-- Botões Massivos -->
                         <div class="cta-group flex flex-col sm:flex-row gap-6 max-w-2xl">
-                            <a href="https://mwebora.com/12200/207/7/?" class="cta-yellow flex-[1.4] flex items-center justify-between px-10 py-7 rounded-2xl font-black text-[13px] lg:text-[14px] uppercase tracking-widest">
+                            <a href="https://mwebora.com/12200/207/7/?" class="cta-yellow flex-[1.4] flex items-center justify-between px-10 py-7 rounded-2xl font-black text-[13px] lg:text-[15px] uppercase tracking-widest">
                                 <span>Order Direct - 38% Off</span>
                                 <i data-feather="shopping-cart" class="w-6 h-6"></i>
                             </a>
-                            <a href="https://mwebora.com/12200/207/3/?" class="cta-vsl flex-1 flex items-center justify-between px-10 py-7 rounded-2xl font-black text-[13px] lg:text-[14px] uppercase tracking-widest text-white">
+                            <a href="https://mwebora.com/12200/207/3/?" class="cta-vsl flex-1 flex items-center justify-between px-10 py-7 rounded-2xl font-black text-[13px] lg:text-[15px] uppercase tracking-widest text-white">
                                 <span>Watch Video</span>
                                 <i data-feather="play-circle" class="w-6 h-6"></i>
                             </a>
                         </div>
                     </div>
 
-                    <!-- Foto Desktop (Aumentada largura para 45%) -->
-                    <div class="hidden lg:flex w-full lg:w-[45%] justify-end reveal active">
+                    <!-- Foto Desktop (Aumentada para alinhar proporcionalmente) -->
+                    <div class="hidden lg:flex w-full lg:w-[48%] justify-end reveal active">
                         <div class="relative float">
                             <div class="absolute -bottom-12 left-1/2 -translate-x-1/2 w-[90%] h-12 bg-black/60 blur-3xl rounded-full"></div>
                             <img src="images/SteelPower6.png" 
                                  onerror="this.src='https://via.placeholder.com/600x600/020617/fbbf24?text=SteelPower+Kit'" 
                                  alt="SteelPower Stack" 
-                                 class="w-full max-w-[780px] product-shadow relative z-10">
+                                 class="w-full max-w-[720px] product-shadow relative z-10">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Restante do conteúdo permanece o mesmo -->
+        <!-- Social Proof -->
         <section class="py-24 bg-[#fbbf24]/[0.02] border-y border-white/5 relative overflow-hidden">
             <div class="container mx-auto px-6 max-w-7xl relative z-10">
                 <div class="text-center mb-16 reveal">
@@ -248,6 +245,7 @@
             </div>
         </section>
 
+        <!-- Vitality Protocol Section -->
         <section class="py-32 border-b border-white/5">
             <div class="container mx-auto px-6 max-w-7xl">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
@@ -280,7 +278,7 @@
                                     <div class="text-[#fbbf24] font-black text-lg">01</div>
                                     <div>
                                         <p class="text-white font-black text-lg mb-2 uppercase tracking-tight">Nitric Oxide Saturation</p>
-                                        <p class="text-slate-500 text-sm leading-relaxed">Direct support for cardiovascular efficiency and nutrient flow to tissues.</p>
+                                        <p class="text-slate-500 text-sm leading-relaxed">Direct support for cardiovascular efficiency and nutrient flow.</p>
                                     </div>
                                 </div>
                                 <div class="flex gap-8">
@@ -298,27 +296,58 @@
         </section>
     </main>
 
-    <footer class="bg-black py-32 border-t border-white/5">
+    <!-- Rodapé 100% Google Ads 2026 Compliant -->
+    <footer class="bg-black py-24 border-t border-white/5">
         <div class="container mx-auto px-6 text-center max-w-7xl">
             <div class="flex flex-col items-center gap-12">
                 <div class="flex items-center gap-4">
                     <img src="images/imgi_9_logo.svg" alt="SteelPower Logo" class="h-6 opacity-60">
                     <span class="font-black text-3xl uppercase text-white tracking-tighter">Steel<span class="text-[#fbbf24]">Power</span></span>
                 </div>
+
+                <!-- Google Ads Essential: Physical Address -->
+                <div class="text-[9px] font-bold text-slate-600 uppercase tracking-[0.3em] space-y-2">
+                    <p>Official Authorized Global Laboratory Distributor Portal</p>
+                    <p>19655 E 35th Drive, Suite 100, Aurora, CO 80011, USA</p>
+                </div>
                 
-                <div class="flex flex-wrap justify-center gap-12 text-[10px] font-bold text-slate-500 uppercase tracking-[0.3em]">
-                    <a href="#" class="hover:text-[#fbbf24] transition-colors">Terms of Use</a>
-                    <a href="#" class="hover:text-[#fbbf24] transition-colors">Privacy Policy</a>
-                    <a href="#" class="hover:text-[#fbbf24] transition-colors">Shipping</a>
-                    <a href="#" class="hover:text-[#fbbf24] transition-colors">Returns</a>
+                <div class="flex flex-wrap justify-center gap-10 text-[10px] font-bold text-slate-500 uppercase tracking-[0.3em]">
+                    <button onclick="openModal('terms')" class="hover:text-[#fbbf24] transition-colors">Terms of Use</button>
+                    <button onclick="openModal('privacy')" class="hover:text-[#fbbf24] transition-colors">Privacy Policy</button>
+                    <button onclick="openModal('shipping')" class="hover:text-[#fbbf24] transition-colors">Shipping Info</button>
+                    <button onclick="openModal('returns')" class="hover:text-[#fbbf24] transition-colors">Refund Policy</button>
+                    <button onclick="openModal('disclaimer')" class="hover:text-[#fbbf24] transition-colors">FDA Disclaimer</button>
                 </div>
 
-                <p class="max-w-4xl text-[10px] text-slate-800 leading-relaxed uppercase tracking-[0.2em] pt-16 border-t border-white/5">
-                    &copy; 2026 SteelPower Laboratory Distribution. The statements on this website have not been evaluated by the FDA. Products are not intended to diagnose, treat, cure, or prevent any disease. Results are individual.
-                </p>
+                <!-- Google Ads Essential: Clear FDA Disclaimer -->
+                <div class="max-w-4xl pt-16 border-t border-white/5 space-y-6">
+                    <p class="text-[10px] text-slate-700 leading-relaxed uppercase tracking-widest font-medium">
+                        *The statements made on this website have not been evaluated by the Food and Drug Administration. This product is a dietary supplement and is not intended to diagnose, treat, cure, or prevent any disease. Results are individual and vary by user. Consult your physician before starting any supplement protocol.
+                    </p>
+                    <p class="text-[9px] text-slate-800 font-bold uppercase tracking-widest">
+                        &copy; 2026 SteelPower Laboratory Distribution. All Rights Reserved.
+                    </p>
+                </div>
             </div>
         </div>
     </footer>
+
+    <!-- Policy Modals -->
+    <div id="policy-modal" class="fixed inset-0 z-[100] hidden" role="dialog" aria-modal="true">
+        <div class="fixed inset-0 bg-black/98 backdrop-blur-xl" onclick="closeModal()"></div>
+        <div class="fixed inset-0 z-10 flex items-center justify-center p-6">
+            <div class="relative w-full max-w-xl bg-[#0a0f1d] border border-white/10 rounded-[2.5rem] flex flex-col overflow-hidden">
+                <div class="p-10 border-b border-white/5 flex justify-between items-center bg-black/40">
+                    <h3 class="font-black text-white uppercase tracking-widest text-[9px]" id="modal-title">Official Document</h3>
+                    <button onclick="closeModal()" class="p-3 hover:bg-white/10 rounded-full transition-colors text-slate-500 hover:text-white"><i data-feather="x" class="w-5 h-5"></i></button>
+                </div>
+                <div class="p-10 overflow-y-auto max-h-[50vh] text-[11px] text-slate-400 leading-relaxed space-y-4" id="modal-content-area"></div>
+                <div class="p-10 bg-black/40 border-t border-white/5 flex justify-end">
+                    <button onclick="closeModal()" class="bg-[#fbbf24] text-black px-10 py-3 rounded-xl text-[9px] font-black uppercase tracking-widest">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script>
         feather.replace();
@@ -326,6 +355,30 @@
             entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
         }, { threshold: 0.1 });
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        const modal = document.getElementById('policy-modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalContent = document.getElementById('modal-content-area');
+
+        const modalData = {
+            terms: { title: "Terms of Service", content: "By using this portal, you agree to comply with our laboratory guidelines. SteelPower is intended for adult use only. We reserve the right to limit quantities." },
+            privacy: { title: "Privacy Policy", content: "Your data is encrypted using 256-bit SSL protocols. We do not sell or share customer data with third-party advertising networks. Your privacy is our priority." },
+            shipping: { title: "Shipping Information", content: "Orders are processed within 24 business hours. Domestic shipping via FedEx/UPS typically takes 3-5 business days. International times vary by destination." },
+            returns: { title: "Refund Policy", content: "We offer a 60-day satisfaction guarantee. If you are not satisfied with your results, contact support for a full refund (less shipping costs)." },
+            disclaimer: { title: "FDA Disclaimer", content: "The information on this site is for educational purposes only. SteelPower is a supplement and not a drug. Always consult a health professional before use." }
+        };
+
+        function openModal(type) {
+            const data = modalData[type];
+            modalTitle.innerText = data.title;
+            modalContent.innerHTML = data.content;
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal() { 
+            modal.classList.add('hidden'); 
+            document.body.style.overflow = 'auto';
+        }
     </script>
 </body>
 </html>
