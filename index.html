@@ -12,8 +12,8 @@
     <script src="https://cdn.kavrocdn.com/code/8300-8a07c3e0-1826-4e51-b73c-f5ddb3ea59fe"></script>
 
     <!-- SEO & Metadados - Foco Absoluto no Mercado EUA -->
-    <title>SteelPower | Reclaim Your Primal Drive - Official Authorized Distributor</title>
-    <meta name="description" content="The definitive protocol for elite male vitality. Engineered for strength, stamina, and metabolic performance. Authorized distributor. Save up to $780 today.">
+    <title>SteelPower | Reclaim Your Primal Edge - Official Authorized Distributor</title>
+    <meta name="description" content="The definitive protocol for elite male vitality. Engineered for strength, stamina, and mental drive. Authorized distributor. Save up to $780 today.">
     <link rel="canonical" href="https://boostyourvigor.vercel.app/">
 
     <!-- UI Assets -->
@@ -30,10 +30,10 @@
         body { 
             font-family: 'Plus Jakarta Sans', sans-serif; 
             background-color: var(--dark-bg); 
-            /* Detalhe de Grelha Profissional - Estilo image_808778.png */
+            /* Grid Profissional Congruente */
             background-image: 
-                linear-gradient(to right, rgba(255,255,255,0.02) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(255,255,255,0.02) 1px, transparent 1px);
+                linear-gradient(to right, rgba(56, 189, 248, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(56, 189, 248, 0.03) 1px, transparent 1px);
             background-size: 40px 40px;
             color: #f8fafc; 
             overflow-x: hidden;
@@ -43,10 +43,10 @@
         .glass-card {
             background: rgba(15, 23, 42, 0.98);
             border: 1px solid rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(16px);
+            backdrop-filter: blur(12px);
         }
 
-        /* Animações de Revelação */
+        /* Entry Animations */
         .reveal { 
             opacity: 0; 
             transform: translateY(15px); 
@@ -63,22 +63,21 @@
         }
         .float-animation { animation: float 6s ease-in-out infinite; }
 
-        /* Sombra de Produto Premium (Profundidade 3D) - Estilo image_800aba.png */
+        /* Sombra de Produto Premium conforme image_800aba.png */
         .product-shadow-3d {
-            filter: drop-shadow(0 25px 50px rgba(0,0,0,0.9));
+            filter: drop-shadow(0 30px 60px rgba(0,0,0,0.9));
         }
 
-        /* Botão Amarelo - Direct Response Style */
+        /* Botão Amarelo - conforme image_7fff9c.png */
         .cta-yellow {
-            background: linear-gradient(180deg, #ffe066 0%, #fbbf24 100%);
+            background: #fbbf24;
             color: #020617;
-            box-shadow: 0 4px 20px rgba(251, 191, 36, 0.25), inset 0 -3px 0 rgba(0,0,0,0.1);
+            box-shadow: 0 4px 20px rgba(251, 191, 36, 0.2);
             transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .cta-yellow:hover {
-            transform: translateY(-2px) scale(1.02);
+            transform: translateY(-2px);
             filter: brightness(1.05);
-            box-shadow: 0 10px 40px rgba(251, 191, 36, 0.35);
         }
 
         /* Botão VSL Glass */
@@ -91,108 +90,139 @@
         }
         .cta-vsl:hover {
             background: rgba(255, 255, 255, 0.08);
-            border-color: var(--accent-yellow);
-            color: var(--accent-yellow);
+            border-color: rgba(255, 255, 255, 0.3);
         }
 
         .text-accent { color: var(--accent-yellow); }
 
-        /* Proporção Tipográfica Profissional (Título Ajustado) */
-        h1 { font-size: 3rem; line-height: 0.95; font-weight: 800; letter-spacing: -0.04em; }
-        @media (min-width: 768px) { h1 { font-size: 4.5rem; } }
-        @media (min-width: 1024px) { h1 { font-size: 5rem; } }
+        /* Proporção de Título Conforme Referência image_7fff9c.png */
+        h1 { 
+            font-size: 3.8rem; 
+            line-height: 1.1; 
+            font-weight: 800; 
+            letter-spacing: -0.02em; 
+            text-transform: uppercase;
+        }
+        @media (min-width: 768px) { h1 { font-size: 5.5rem; } }
+        @media (min-width: 1024px) { h1 { font-size: 6.5rem; } }
 
-        /* Alinhamento Mobile Perfeito e Congruente */
-        @media (max-width: 768px) {
-            .hero-content { display: flex; flex-direction: column; align-items: center; text-align: center; }
-            .hero-title { order: 1; margin-bottom: 1.5rem; width: 100%; }
-            .hero-image-mobile { order: 2; display: block !important; margin: 0 auto 2.5rem auto; width: 100%; max-width: 320px; }
-            .hero-cta-group { order: 3; margin-bottom: 2.5rem; width: 100%; padding: 0 10px; }
-            .hero-desc { order: 4; width: 100%; font-size: 1rem; padding: 0 15px; }
+        /* Alinhamento Mobile conforme solicitado */
+        @media (max-width: 1024px) {
+            .hero-content { display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
+            .hero-title { order: 1; margin-bottom: 1.5rem; }
+            .hero-badge { order: 2; margin-bottom: 2rem; }
+            .hero-image-right { order: 3; display: block !important; margin: 0 auto 2.5rem auto; width: 100%; max-width: 400px; }
+            .hero-cta-group { order: 4; margin-bottom: 2rem; width: 100%; }
+            .hero-desc { order: 5; width: 100%; font-size: 1.1rem; }
             
-            .cta-yellow, .cta-vsl { width: 100%; }
+            h1 { font-size: 3.2rem !important; }
+        }
+
+        /* Estilo da Tag "Official Authorized Distributor" da imagem */
+        .official-tag {
+            border: 1px solid rgba(251, 191, 36, 0.3);
+            background: rgba(251, 191, 36, 0.05);
+            padding: 8px 20px;
+            border-radius: 99px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--accent-yellow);
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
         }
     </style>
 </head>
 <body class="antialiased">
 
-    <!-- Header Profissional -->
+    <!-- Cabeçalho -->
     <header class="sticky top-0 bg-[#020617]/95 backdrop-blur-xl z-[60] border-b border-white/5">
         <div class="container mx-auto flex justify-between items-center p-4 px-6 md:px-10 max-w-7xl">
             <a href="https://mwebora.com/12200/207/7/?" class="flex items-center gap-3">
-                <img src="images/imgi_9_logo.svg" alt="SteelPower Logo" class="h-8 md:h-10 w-auto">
+                <img src="images/imgi_9_logo.svg" alt="SteelPower Logo" class="h-6 md:h-7 w-auto">
                 <div class="hidden sm:block">
-                    <span class="font-black tracking-tighter text-xl text-white uppercase">Steel<span class="text-accent">Power</span></span>
+                    <span class="font-bold tracking-tighter text-lg text-white uppercase">Steel<span class="text-accent">Power</span></span>
                 </div>
             </a>
             <div class="flex items-center gap-6">
-                <div class="hidden lg:flex items-center gap-2 text-[10px] font-bold text-slate-500 uppercase tracking-widest">
-                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                    Official Authorized Distributor
+                <div class="hidden lg:flex items-center gap-2 text-[9px] font-bold text-slate-500 uppercase tracking-widest">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                    Authorized Distribution
                 </div>
-                <a href="https://mwebora.com/12200/207/7/?" class="text-[9px] font-black uppercase tracking-widest text-accent border border-amber-500/30 px-5 py-2 rounded-full hover:bg-amber-500 hover:text-black transition-all">Order Online</a>
+                <a href="https://mwebora.com/12200/207/7/?" class="text-[10px] font-black uppercase tracking-widest text-white border border-white/20 px-5 py-2 rounded-full hover:bg-white hover:text-black transition-all">Order Now</a>
             </div>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section - Sem Seção de Preços, Foco em Título + Kit Image + Texto -->
-        <section class="relative pt-12 md:pt-24 pb-20 md:pb-32 overflow-hidden border-b border-white/5">
+        <!-- Hero Section - Alinhamento image_7fff9c.png -->
+        <section class="relative pt-12 md:pt-24 pb-20 md:pb-40 overflow-hidden">
             <div class="container mx-auto px-6 relative z-10 max-w-7xl">
-                <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-24 hero-content">
+                <div class="flex flex-col lg:flex-row items-start lg:items-center gap-12 lg:gap-20 hero-content">
                     
-                    <!-- Coluna de Texto e CTAs -->
-                    <div class="w-full lg:w-3/5 text-center lg:text-left reveal active">
-                        <h1 class="hero-title text-white uppercase mb-8">
-                            Reclaim Your <br class="hidden lg:block"> <span class="text-accent">Primal Drive.</span>
+                    <!-- Coluna de Texto (Esquerda) -->
+                    <div class="w-full lg:w-3/5 reveal active">
+                        <h1 class="hero-title text-white mb-8">
+                            Reclaim Your <br> <span class="text-accent">Primal Edge.</span>
                         </h1>
 
-                        <!-- Kit Image Mobile (Sombra 3D Conforme Solicitado) -->
-                        <div class="hero-image-mobile hidden float-animation">
-                            <img src="images/imgi_4_kit-6.png" onerror="this.src='https://via.placeholder.com/400x300/0f172a/fbbf24?text=SteelPower+Kit'" alt="SteelPower Kit" class="w-full product-shadow-3d">
+                        <div class="hero-badge mb-10">
+                            <div class="official-tag">
+                                <i data-feather="check" class="w-3 h-3"></i>
+                                Official Authorized Distributor
+                            </div>
                         </div>
 
-                        <!-- Strategic 2-Button Group -->
-                        <div class="hero-cta-group flex flex-col sm:flex-row gap-4 mb-12 w-full max-w-xl mx-auto lg:mx-0">
-                            <a href="https://mwebora.com/12200/207/7/?" class="cta-yellow flex-1 flex items-center justify-center gap-3 px-8 py-5 rounded-2xl font-black uppercase tracking-widest text-xs group">
+                        <!-- Kit Image (Aparece aqui no Mobile, Esquerda no Desktop) -->
+                        <div class="hero-image-right hidden float-animation lg:hidden">
+                            <img src="images/imgi_4_kit-6.png" onerror="this.src='https://via.placeholder.com/500x400/0f172a/fbbf24?text=SteelPower+Kit'" alt="SteelPower Kit" class="w-full product-shadow-3d">
+                        </div>
+
+                        <!-- Grupo de CTAs -->
+                        <div class="hero-cta-group flex flex-col sm:flex-row gap-4 mb-12 w-full max-w-xl">
+                            <a href="https://mwebora.com/12200/207/7/?" class="cta-yellow flex-[1.5] flex items-center justify-between px-8 py-5 rounded-xl font-black uppercase tracking-widest text-xs group">
                                 <span>ORDER DIRECT - 38% OFF</span>
-                                <i data-feather="shopping-cart" class="w-4 h-4 group-hover:rotate-12 transition-transform"></i>
+                                <i data-feather="shopping-cart" class="w-5 h-5"></i>
                             </a>
-                            <a href="https://mwebora.com/12200/207/3/?" class="cta-vsl flex-1 flex items-center justify-center gap-3 px-8 py-5 rounded-2xl font-black uppercase tracking-widest text-xs group">
+                            <a href="https://mwebora.com/12200/207/3/?" class="cta-vsl flex-1 flex items-center justify-between px-8 py-5 rounded-xl font-black uppercase tracking-widest text-xs group">
                                 <span>WATCH VIDEO GUIDE</span>
-                                <i data-feather="play-circle" class="w-4 h-4"></i>
+                                <i data-feather="play-circle" class="w-5 h-5"></i>
                             </a>
                         </div>
 
-                        <p class="hero-desc text-lg md:text-xl text-slate-400 leading-relaxed font-medium max-w-xl mx-auto lg:mx-0">
-                            The era of mediocrity is over. SteelPower is the definitive laboratory-grade protocol engineered for high-performance men who demand elite metabolic vitality and peak daily drive.
+                        <p class="hero-desc text-base md:text-lg text-slate-400 leading-relaxed font-medium max-w-xl">
+                            Designed for high-performance men who refuse to settle for average. SteelPower is the science-based protocol for metabolic energy and peak physical drive.
                         </p>
                     </div>
 
-                    <!-- Kit Image Desktop (Com Sombra Profunda) -->
+                    <!-- Coluna de Imagem (Direita Desktop) -->
                     <div class="hidden lg:block w-full lg:w-2/5 reveal active">
                         <div class="relative float-animation">
-                            <div class="absolute inset-0 bg-amber-500/10 rounded-full blur-[140px] opacity-40"></div>
-                            <img src="images/imgi_4_kit-6.png" onerror="this.src='https://via.placeholder.com/500x400/0f172a/fbbf24?text=SteelPower+Kit'" alt="SteelPower Kit Desktop" class="relative z-10 w-full max-w-[550px] mx-auto product-shadow-3d">
+                            <!-- Glow Background -->
+                            <div class="absolute inset-0 bg-blue-500/5 rounded-full blur-[140px] opacity-30"></div>
+                            <img src="images/imgi_4_kit-6.png" onerror="this.src='https://via.placeholder.com/600x500/0f172a/fbbf24?text=SteelPower+Kit'" alt="SteelPower Premium Kit" class="relative z-10 w-full max-w-[650px] ml-auto product-shadow-3d">
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- Strategic Content & Facts -->
-        <section class="py-24 bg-black/40 border-b border-white/5">
+        <!-- Secção de Factos Estratégicos -->
+        <section class="py-24 bg-black/40 border-y border-white/5">
             <div class="container mx-auto px-6 max-w-7xl">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
                     <div class="reveal">
-                        <h2 class="text-3xl md:text-5xl font-black text-white mb-8 tracking-tighter leading-tight uppercase">THE MODERN MALE <span class="text-accent">VITALITY CRISIS.</span></h2>
+                        <h2 class="text-3xl md:text-5xl font-black text-white mb-8 tracking-tighter leading-tight uppercase">The Modern <br><span class="text-accent">Vitality Crisis.</span></h2>
                         <p class="text-base md:text-lg text-slate-400 leading-relaxed mb-6">
-                            Environmental factors, high-stress lifestyles, and critical nutritional gaps are eroding performance across the United States. Most men simply accept a slow decline as "aging."
+                            Environmental factors and high-stress lifestyles are quietly eroding performance. Most men simply accept a slow decline in their energy and focus as "aging."
                         </p>
                         <p class="text-base md:text-lg text-slate-400 leading-relaxed mb-10">
-                            SteelPower is the response. A laboratory-grade matrix designed to saturate your system with the precursors needed for elite energy, vascular health, and cognitive focus.
+                            SteelPower is the elite response. A laboratory-grade matrix designed to saturate your system with the precursors needed for elite energy, vascular health, and cognitive focus.
                         </p>
-                        <div class="flex flex-wrap gap-8 opacity-60">
+                        <div class="flex flex-wrap gap-8 opacity-40">
                             <div class="flex items-center gap-2">
                                 <i data-feather="shield" class="w-5 h-5 text-emerald-500"></i>
                                 <span class="text-[10px] font-black uppercase tracking-widest text-white">Lab Verified</span>
@@ -229,19 +259,18 @@
             </div>
         </section>
 
-        <!-- Social Proof & Compliance -->
+        <!-- Prova Social -->
         <section class="py-24 border-b border-white/5">
             <div class="container mx-auto px-6 max-w-7xl">
                 <div class="text-center mb-16 reveal">
-                    <p class="text-accent font-black text-[10px] tracking-[0.4em] uppercase mb-4">Community Proof</p>
-                    <h2 class="text-4xl md:text-6xl font-black text-white mb-6 tracking-tighter uppercase italic">12,400+ LIVES OPTIMIZED.</h2>
+                    <h2 class="text-4xl md:text-6xl font-black text-white mb-6 tracking-tighter uppercase italic">12,400+ Lives Optimized.</h2>
                     <div class="flex justify-center items-center gap-1.5 text-accent">
-                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
-                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
-                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
-                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
-                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
-                        <span class="text-white font-black text-[10px] ml-4 tracking-widest uppercase opacity-60">Verified Lab Feedback</span>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <span class="text-white font-black text-[10px] ml-4 tracking-widest uppercase opacity-40">Verified Lab Feedback</span>
                     </div>
                 </div>
 
@@ -261,7 +290,7 @@
                         </div>
                     </div>
                     <div class="glass-card p-10 rounded-[2rem] hover:border-accent/20 transition-all flex flex-col justify-between">
-                        <p class="text-slate-300 font-medium italic text-base leading-relaxed mb-8">"Shipment arrived in 3 days. Clean focus, no crash, and noticeably better recovery times after heavy sessions."</p>
+                        <p class="text-slate-300 font-medium italic text-base leading-relaxed mb-8">"Shipment arrived in 3 days. Clean focus, no crash, and noticeably better recovery times after training sessions."</p>
                         <div class="flex items-center gap-4">
                             <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center font-black text-accent text-[8px]">BT</div>
                             <p class="text-white font-black text-[10px] uppercase tracking-widest">Brian T.</p>
@@ -270,21 +299,16 @@
                 </div>
 
                 <div class="text-center reveal">
-                    <a href="https://mwebora.com/12200/207/7/?" class="cta-yellow inline-flex items-center justify-center gap-8 px-16 py-7 rounded-2xl font-black uppercase tracking-[0.3em] text-sm group shadow-2xl">
+                    <a href="https://mwebora.com/12200/207/7/?" class="cta-yellow inline-flex items-center justify-center gap-8 px-16 py-7 rounded-2xl font-black uppercase tracking-[0.2em] text-sm group">
                         <span>ACTIVATE YOUR PROTOCOL NOW</span>
                         <i data-feather="arrow-right" class="w-6 h-6"></i>
                     </a>
-                    <div class="mt-8 flex justify-center gap-8 opacity-20 grayscale">
-                        <i data-feather="lock" class="w-6 h-6"></i>
-                        <i data-feather="truck" class="w-6 h-6"></i>
-                        <i data-feather="award" class="w-6 h-6"></i>
-                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer - Google Ads Compliance 2026 -->
+    <!-- Rodapé -->
     <footer class="bg-[#000] text-slate-700 py-24 border-t border-white/5">
         <div class="container mx-auto px-6 text-center max-w-7xl">
             <div class="mb-16">
@@ -293,19 +317,19 @@
                     <span class="font-black tracking-tighter text-2xl text-white uppercase">Steel<span class="text-accent">Power</span></span>
                 </div>
                 <p class="text-[9px] font-black text-accent uppercase tracking-[0.4em] mb-4">Official Authorized Laboratory Distributor</p>
-                <p class="text-[9px] tracking-widest opacity-50 uppercase">19655 E 35th Drive, Suite 100, Aurora, CO 80011, USA</p>
+                <p class="text-[9px] tracking-widest opacity-60 uppercase">19655 E 35th Drive, Suite 100, Aurora, CO 80011, USA</p>
             </div>
             
-            <div class="flex justify-center flex-wrap gap-10 mb-20 text-[9px] font-black uppercase tracking-[0.3em]">
-                <button onclick="openModal('terms')" class="hover:text-accent">Terms</button>
-                <button onclick="openModal('privacy')" class="hover:text-accent">Privacy</button>
-                <button onclick="openModal('shipping')" class="hover:text-accent">Shipping</button>
-                <button onclick="openModal('returns')" class="hover:text-accent">Returns</button>
-                <button onclick="openModal('disclaimer')" class="hover:text-accent">Disclaimer</button>
+            <div class="flex justify-center flex-wrap gap-10 mb-20 text-[9px] font-black uppercase tracking-[0.35em]">
+                <button onclick="openModal('terms')" class="hover:text-accent transition-colors">Terms</button>
+                <button onclick="openModal('privacy')" class="hover:text-accent transition-colors">Privacy</button>
+                <button onclick="openModal('shipping')" class="hover:text-accent transition-colors">Shipping</button>
+                <button onclick="openModal('returns')" class="hover:text-accent transition-colors">Returns</button>
+                <button onclick="openModal('disclaimer')" class="hover:text-accent transition-colors">Disclaimer</button>
             </div>
 
-            <div class="max-w-4xl mx-auto text-[9px] leading-relaxed opacity-20 pt-10 border-t border-white/5 space-y-6">
-                <p>The statements made on this website have not been evaluated by the FDA. This product is a dietary supplement and is not intended to diagnose, treat, cure, or prevent any disease. Results are individual and vary by user. As an authorized distributor, we provide genuine products sourced directly from the production laboratory.</p>
+            <div class="max-w-4xl mx-auto text-[9px] leading-relaxed opacity-20 pt-12 border-t border-white/5 space-y-8">
+                <p>The statements made on this website have not been evaluated by the FDA. This product is a dietary supplement and is not intended to diagnose, treat, cure, or prevent any disease. Results are individual and vary by user.</p>
                 <p>&copy; 2026 SteelPower Laboratory Distribution. All Rights Reserved.</p>
             </div>
         </div>
@@ -316,14 +340,14 @@
         <div class="fixed inset-0 bg-black/98 backdrop-blur-xl" onclick="closeModal()"></div>
         <div class="fixed inset-0 z-10 overflow-y-auto">
             <div class="flex min-h-full items-center justify-center p-6">
-                <div class="relative w-full max-w-xl bg-[#0a0f1d] border border-white/10 rounded-[2.5rem] flex flex-col overflow-hidden shadow-2xl">
+                <div class="relative w-full max-w-xl bg-[#0a0f1d] border border-white/10 rounded-[2rem] shadow-2xl flex flex-col overflow-hidden">
                     <div class="px-8 py-6 border-b border-white/5 flex justify-between items-center bg-black/40">
                         <h3 class="font-black text-white uppercase tracking-widest text-[9px]" id="modal-title">Document</h3>
-                        <button onclick="closeModal()" class="p-2 hover:bg-white/10 rounded-full transition-colors text-slate-500 hover:text-white"><i data-feather="x" class="w-5 h-5"></i></button>
+                        <button onclick="closeModal()" class="p-2 hover:bg-white/10 rounded-full transition-colors text-slate-500 hover:text-white"><i data-feather="x" class="w-4 h-4"></i></button>
                     </div>
                     <div class="p-10 overflow-y-auto max-h-[50vh] text-xs text-slate-400 leading-relaxed" id="modal-content-area"></div>
                     <div class="px-8 py-6 bg-black/40 border-t border-white/5 flex justify-end">
-                        <button onclick="closeModal()" class="bg-accent text-black px-8 py-3 rounded-xl text-[9px] font-black uppercase tracking-widest">Close Window</button>
+                        <button onclick="closeModal()" class="bg-accent text-black px-10 py-3 rounded-xl text-[9px] font-black uppercase tracking-widest">Close</button>
                     </div>
                 </div>
             </div>
@@ -345,11 +369,11 @@
         const modalContent = document.getElementById('modal-content-area');
 
         const modalData = {
-            terms: { title: "Terms of Service", content: "<p>Standard legal terms apply. Adult use only (18+).</p>" },
+            terms: { title: "Terms of Service", content: "<p>Standard legal terms apply to your use of this portal. Adult use only (18+).</p>" },
             privacy: { title: "Privacy Policy", content: "<p>We protect your data with 256-bit encryption. We never share your data.</p>" },
-            shipping: { title: "Shipping Policy", content: "<p>Orders ship within 48 business hours. Delivery typically takes 3-5 days in the US.</p>" },
+            shipping: { title: "Shipping Information", content: "<p>Orders are dispatched within 48 business hours. Delivery typically takes 3-5 days in the US.</p>" },
             returns: { title: "Refund Policy", content: "<p>Our 60-day guarantee is absolute. Contact support for instructions.</p>" },
-            disclaimer: { title: "FDA Disclaimer", content: "<p>SteelPower is a dietary supplement and not intended to replace medical advice. Consult your doctor before use.</p>" }
+            disclaimer: { title: "FDA Disclaimer", content: "<p>SteelPower is a dietary supplement. Always consult your doctor before use.</p>" }
         };
 
         function openModal(type) {
