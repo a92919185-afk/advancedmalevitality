@@ -116,14 +116,14 @@
                 justify-content: center; 
             }
             .hero-image-wrapper img {
-                max-width: 280px !important; /* Foto diminuída no mobile conforme pedido */
+                max-width: 280px !important; 
             }
             .hero-desc { order: 3; text-align: left; margin-bottom: 2.5rem; }
             .cta-group { order: 4; width: 100%; margin-bottom: 2.5rem; }
             
             .cta-group a {
-                padding: 1.6rem 2rem !important;
-                font-size: 14px !important;
+                padding: 1.6rem 1.5rem !important; /* Ligeiro ajuste lateral para mobile */
+                font-size: 13px !important;
             }
         }
     </style>
@@ -177,15 +177,15 @@
                             Designed for high-performance men who refuse to settle for average. SteelPower is the science-based protocol for metabolic energy and peak physical drive.
                         </p>
 
-                        <!-- Botões Massivos -->
-                        <div class="cta-group flex flex-col sm:flex-row gap-6 max-w-2xl">
-                            <a href="https://mwebora.com/12200/207/7/?" class="cta-yellow flex-[1.4] flex items-center justify-between px-10 py-7 rounded-2xl font-black text-[13px] lg:text-[15px] uppercase tracking-widest">
-                                <span>Order Direct - 38% Off</span>
-                                <i data-feather="shopping-cart" class="w-6 h-6"></i>
+                        <!-- Botões Massivos - Fixados em uma linha -->
+                        <div class="cta-group flex flex-col sm:flex-row gap-6 lg:max-w-3xl">
+                            <a href="https://mwebora.com/12200/207/7/?" class="cta-yellow flex-auto flex items-center justify-between px-8 lg:px-10 py-7 rounded-2xl font-black text-[12px] lg:text-[14px] uppercase tracking-widest">
+                                <span class="whitespace-nowrap">Order Direct - 38% Off</span>
+                                <i data-feather="shopping-cart" class="w-5 h-5 lg:w-6 lg:h-6 ml-4"></i>
                             </a>
-                            <a href="https://mwebora.com/12200/207/3/?" class="cta-vsl flex-1 flex items-center justify-between px-10 py-7 rounded-2xl font-black text-[13px] lg:text-[15px] uppercase tracking-widest text-white">
-                                <span>Watch Video</span>
-                                <i data-feather="play-circle" class="w-6 h-6"></i>
+                            <a href="https://mwebora.com/12200/207/3/?" class="cta-vsl flex-auto flex items-center justify-between px-8 lg:px-10 py-7 rounded-2xl font-black text-[12px] lg:text-[14px] uppercase tracking-widest text-white">
+                                <span class="whitespace-nowrap">Watch Video Guide</span>
+                                <i data-feather="play-circle" class="w-5 h-5 lg:w-6 lg:h-6 ml-4"></i>
                             </a>
                         </div>
                     </div>
