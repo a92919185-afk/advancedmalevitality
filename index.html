@@ -86,7 +86,6 @@
             transform: translateY(-3px);
         }
 
-        /* DEPOIMENTOS */
         .testimonial-card {
             background: linear-gradient(145deg, rgba(15, 23, 42, 0.9) 0%, rgba(2, 6, 23, 0.95) 100%);
             border: 1px solid rgba(251, 191, 36, 0.1);
@@ -128,14 +127,13 @@
                 display: flex !important; 
                 justify-content: center; 
             }
-            /* REDUÇÃO DA FOTO NO MOBILE CONFORME PEDIDO */
             .hero-image-wrapper img {
                 max-width: 320px !important;
             }
-            .cta-group { order: 3; width: 100%; margin-bottom: 2.5rem; }
-            .hero-desc { order: 4; text-align: left; }
+            /* A descrição agora vai antes dos botões */
+            .hero-desc { order: 3; text-align: left; margin-bottom: 2.5rem; }
+            .cta-group { order: 4; width: 100%; margin-bottom: 2.5rem; }
             
-            /* Botões Maiores no Mobile */
             .cta-group a {
                 padding: 1.5rem 2rem !important;
                 font-size: 14px !important;
@@ -173,7 +171,7 @@
                     
                     <!-- Conteúdo Esquerda -->
                     <div class="w-full lg:w-[65%] reveal active flex flex-col">
-                        <h1 class="hero-title text-white mb-10 lg:mb-14">
+                        <h1 class="hero-title text-white mb-10 lg:mb-12">
                             Reclaim your <br>
                             <span class="text-[#fbbf24]">Primal Edge.</span>
                         </h1>
@@ -188,8 +186,13 @@
                             </div>
                         </div>
 
-                        <!-- Botões (MELHORADOS E MAIS GRANDES) -->
-                        <div class="cta-group flex flex-col sm:flex-row gap-6 mb-12 lg:mb-16 max-w-2xl">
+                        <!-- Descrição (AGORA VAI ANTES DOS BOTÕES) -->
+                        <p class="hero-desc max-w-2xl mb-10 lg:mb-12">
+                            Designed for high-performance men who refuse to settle for average. SteelPower is the science-based protocol for metabolic energy and peak physical drive.
+                        </p>
+
+                        <!-- Botões -->
+                        <div class="cta-group flex flex-col sm:flex-row gap-6 max-w-2xl">
                             <a href="https://mwebora.com/12200/207/7/?" class="cta-yellow flex-[1.4] flex items-center justify-between px-12 py-8 rounded-2xl font-black text-[14px] lg:text-[15px] uppercase tracking-widest">
                                 <span>Order Direct - 38% Off</span>
                                 <i data-feather="shopping-cart" class="w-6 h-6"></i>
@@ -199,10 +202,6 @@
                                 <i data-feather="play-circle" class="w-6 h-6"></i>
                             </a>
                         </div>
-
-                        <p class="hero-desc max-w-2xl">
-                            Designed for high-performance men who refuse to settle for average. SteelPower is the science-based protocol for metabolic energy and peak physical drive.
-                        </p>
                     </div>
 
                     <!-- Foto Desktop -->
@@ -219,7 +218,7 @@
             </div>
         </section>
 
-        <!-- Social Proof -->
+        <!-- Outras Seções (Review, Protocol, Footer) permanecem inalteradas -->
         <section class="py-24 bg-[#fbbf24]/[0.02] border-y border-white/5 relative overflow-hidden">
             <div class="container mx-auto px-6 max-w-7xl relative z-10">
                 <div class="text-center mb-16 reveal">
@@ -260,7 +259,6 @@
             </div>
         </section>
 
-        <!-- Vitality Protocol Section -->
         <section class="py-32 border-b border-white/5">
             <div class="container mx-auto px-6 max-w-7xl">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
