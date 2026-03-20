@@ -37,8 +37,9 @@
 
         /* TIPOGRAFIA RESPONSIVA REFINADA */
         .hero-title {
-            font-size: clamp(2.8rem, 10vw, 8.5rem); 
-            line-height: 0.82;
+            /* Ajustado: Diminuído no desktop de 8.5rem para 6.8rem para melhor proporção */
+            font-size: clamp(2.8rem, 8vw, 6.8rem); 
+            line-height: 0.85;
             font-weight: 900;
             letter-spacing: -0.06em;
             text-transform: uppercase;
@@ -48,16 +49,6 @@
             font-size: clamp(1.05rem, 1.3vw, 1.25rem);
             line-height: 1.6;
             color: #94a3b8;
-        }
-
-        /* EFEITOS DE COR E GLOW */
-        .glow-overlay {
-            position: absolute;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
-            pointer-events: none;
-            z-index: 0;
         }
 
         /* BOTÕES AGRESSIVOS E IMPACTANTES */
@@ -130,7 +121,6 @@
             .hero-image-wrapper img {
                 max-width: 320px !important;
             }
-            /* A descrição agora vai antes dos botões */
             .hero-desc { order: 3; text-align: left; margin-bottom: 2.5rem; }
             .cta-group { order: 4; width: 100%; margin-bottom: 2.5rem; }
             
@@ -163,20 +153,19 @@
     <main>
         <!-- Hero Section -->
         <section class="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden">
-            <div class="glow-overlay top-0 -left-48"></div>
-            <div class="glow-overlay bottom-0 -right-48" style="background: radial-gradient(circle, rgba(251, 191, 36, 0.05) 0%, transparent 70%);"></div>
+            <div class="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-blue-500/10 rounded-full blur-[150px] pointer-events-none"></div>
             
-            <div class="container mx-auto px-6 md:px-12 max-w-7xl relative z-10">
-                <div class="hero-container flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+            <div class="container mx-auto px-6 md:px-12 max-w-[1400px] relative z-10">
+                <div class="hero-container flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
                     
-                    <!-- Conteúdo Esquerda -->
-                    <div class="w-full lg:w-[65%] reveal active flex flex-col">
-                        <h1 class="hero-title text-white mb-10 lg:mb-12">
+                    <!-- Conteúdo Esquerda (Ajustado largura para 55%) -->
+                    <div class="w-full lg:w-[55%] reveal active flex flex-col">
+                        <h1 class="hero-title text-white mb-8 lg:mb-10">
                             Reclaim your <br>
                             <span class="text-[#fbbf24]">Primal Edge.</span>
                         </h1>
 
-                        <!-- Foto Mobile (REDUZIDA) -->
+                        <!-- Foto Mobile -->
                         <div class="hero-image-wrapper lg:hidden">
                             <div class="relative float">
                                 <img src="images/SteelPower6.png" 
@@ -186,39 +175,39 @@
                             </div>
                         </div>
 
-                        <!-- Descrição (AGORA VAI ANTES DOS BOTÕES) -->
+                        <!-- Descrição -->
                         <p class="hero-desc max-w-2xl mb-10 lg:mb-12">
                             Designed for high-performance men who refuse to settle for average. SteelPower is the science-based protocol for metabolic energy and peak physical drive.
                         </p>
 
                         <!-- Botões -->
                         <div class="cta-group flex flex-col sm:flex-row gap-6 max-w-2xl">
-                            <a href="https://mwebora.com/12200/207/7/?" class="cta-yellow flex-[1.4] flex items-center justify-between px-12 py-8 rounded-2xl font-black text-[14px] lg:text-[15px] uppercase tracking-widest">
+                            <a href="https://mwebora.com/12200/207/7/?" class="cta-yellow flex-[1.4] flex items-center justify-between px-10 py-7 rounded-2xl font-black text-[13px] lg:text-[14px] uppercase tracking-widest">
                                 <span>Order Direct - 38% Off</span>
                                 <i data-feather="shopping-cart" class="w-6 h-6"></i>
                             </a>
-                            <a href="https://mwebora.com/12200/207/3/?" class="cta-vsl flex-1 flex items-center justify-between px-12 py-8 rounded-2xl font-black text-[14px] lg:text-[15px] uppercase tracking-widest text-white">
+                            <a href="https://mwebora.com/12200/207/3/?" class="cta-vsl flex-1 flex items-center justify-between px-10 py-7 rounded-2xl font-black text-[13px] lg:text-[14px] uppercase tracking-widest text-white">
                                 <span>Watch Video</span>
                                 <i data-feather="play-circle" class="w-6 h-6"></i>
                             </a>
                         </div>
                     </div>
 
-                    <!-- Foto Desktop -->
-                    <div class="hidden lg:flex w-full lg:w-[35%] justify-end reveal active">
+                    <!-- Foto Desktop (Aumentada largura para 45%) -->
+                    <div class="hidden lg:flex w-full lg:w-[45%] justify-end reveal active">
                         <div class="relative float">
                             <div class="absolute -bottom-12 left-1/2 -translate-x-1/2 w-[90%] h-12 bg-black/60 blur-3xl rounded-full"></div>
                             <img src="images/SteelPower6.png" 
                                  onerror="this.src='https://via.placeholder.com/600x600/020617/fbbf24?text=SteelPower+Kit'" 
                                  alt="SteelPower Stack" 
-                                 class="w-full max-w-[650px] product-shadow relative z-10">
+                                 class="w-full max-w-[780px] product-shadow relative z-10">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Outras Seções (Review, Protocol, Footer) permanecem inalteradas -->
+        <!-- Restante do conteúdo permanece o mesmo -->
         <section class="py-24 bg-[#fbbf24]/[0.02] border-y border-white/5 relative overflow-hidden">
             <div class="container mx-auto px-6 max-w-7xl relative z-10">
                 <div class="text-center mb-16 reveal">
