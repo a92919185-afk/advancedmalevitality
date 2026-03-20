@@ -11,9 +11,9 @@
     <!-- Script de Rastreamento (Kavro) -->
     <script src="https://cdn.kavrocdn.com/code/8300-8a07c3e0-1826-4e51-b73c-f5ddb3ea59fe"></script>
 
-    <!-- SEO & Metadados - Foco no Mercado EUA -->
-    <title>SteelPower | Reclaim Your Primal Edge - Official Authorized Distributor</title>
-    <meta name="description" content="The definitive protocol for elite male vitality. Engineered for strength, stamina, and mental drive. Authorized distributor. Save up to $780 today.">
+    <!-- SEO & Metadados - Foco Absoluto no Mercado EUA -->
+    <title>SteelPower | Reclaim Your Primal Drive - Official Authorized Distributor</title>
+    <meta name="description" content="The definitive protocol for elite male vitality. Engineered for strength, stamina, and metabolic performance. Authorized distributor. Save up to $780 today.">
     <link rel="canonical" href="https://boostyourvigor.vercel.app/">
 
     <!-- UI Assets -->
@@ -30,7 +30,7 @@
         body { 
             font-family: 'Plus Jakarta Sans', sans-serif; 
             background-color: var(--dark-bg); 
-            /* Detalhe de Grelha Profissional */
+            /* Detalhe de Grelha Profissional - Estilo image_808778.png */
             background-image: 
                 linear-gradient(to right, rgba(255,255,255,0.02) 1px, transparent 1px),
                 linear-gradient(to bottom, rgba(255,255,255,0.02) 1px, transparent 1px);
@@ -43,7 +43,7 @@
         .glass-card {
             background: rgba(15, 23, 42, 0.98);
             border: 1px solid rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(12px);
+            backdrop-filter: blur(16px);
         }
 
         /* Animações de Revelação */
@@ -59,24 +59,29 @@
 
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
+            50% { transform: translateY(-12px); }
         }
         .float-animation { animation: float 6s ease-in-out infinite; }
 
-        /* Botão Amarelo - Conversão Máxima */
+        /* Sombra de Produto Premium (Profundidade 3D) - Estilo image_800aba.png */
+        .product-shadow-3d {
+            filter: drop-shadow(0 25px 50px rgba(0,0,0,0.9));
+        }
+
+        /* Botão Amarelo - Direct Response Style */
         .cta-yellow {
             background: linear-gradient(180deg, #ffe066 0%, #fbbf24 100%);
             color: #020617;
-            box-shadow: 0 4px 20px rgba(251, 191, 36, 0.2), inset 0 -3px 0 rgba(0,0,0,0.1);
+            box-shadow: 0 4px 20px rgba(251, 191, 36, 0.25), inset 0 -3px 0 rgba(0,0,0,0.1);
             transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .cta-yellow:hover {
             transform: translateY(-2px) scale(1.02);
             filter: brightness(1.05);
-            box-shadow: 0 8px 30px rgba(251, 191, 36, 0.3);
+            box-shadow: 0 10px 40px rgba(251, 191, 36, 0.35);
         }
 
-        /* Botão VSL Estilo Glass */
+        /* Botão VSL Glass */
         .cta-vsl {
             background: rgba(255, 255, 255, 0.03);
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -87,26 +92,31 @@
         .cta-vsl:hover {
             background: rgba(255, 255, 255, 0.08);
             border-color: var(--accent-yellow);
+            color: var(--accent-yellow);
         }
 
         .text-accent { color: var(--accent-yellow); }
 
-        /* Alinhamento e Proporção Mobile-First */
+        /* Proporção Tipográfica Profissional (Título Ajustado) */
+        h1 { font-size: 3rem; line-height: 0.95; font-weight: 800; letter-spacing: -0.04em; }
+        @media (min-width: 768px) { h1 { font-size: 4.5rem; } }
+        @media (min-width: 1024px) { h1 { font-size: 5rem; } }
+
+        /* Alinhamento Mobile Perfeito e Congruente */
         @media (max-width: 768px) {
             .hero-content { display: flex; flex-direction: column; align-items: center; text-align: center; }
-            .hero-title { order: 1; margin-bottom: 0.5rem; }
-            .hero-badge { order: 2; margin-bottom: 1.5rem; }
-            .hero-image-mobile { order: 3; display: block !important; margin: 1.5rem auto 2rem auto; width: 100%; max-width: 300px; }
-            .hero-cta-group { order: 4; margin-bottom: 2rem; width: 100%; }
-            .hero-desc { order: 5; width: 100%; }
+            .hero-title { order: 1; margin-bottom: 1.5rem; width: 100%; }
+            .hero-image-mobile { order: 2; display: block !important; margin: 0 auto 2.5rem auto; width: 100%; max-width: 320px; }
+            .hero-cta-group { order: 3; margin-bottom: 2.5rem; width: 100%; padding: 0 10px; }
+            .hero-desc { order: 4; width: 100%; font-size: 1rem; padding: 0 15px; }
             
-            h1 { font-size: 3rem !important; line-height: 1 !important; }
+            .cta-yellow, .cta-vsl { width: 100%; }
         }
     </style>
 </head>
 <body class="antialiased">
 
-    <!-- Cabeçalho Profissional -->
+    <!-- Header Profissional -->
     <header class="sticky top-0 bg-[#020617]/95 backdrop-blur-xl z-[60] border-b border-white/5">
         <div class="container mx-auto flex justify-between items-center p-4 px-6 md:px-10 max-w-7xl">
             <a href="https://mwebora.com/12200/207/7/?" class="flex items-center gap-3">
@@ -117,104 +127,99 @@
             </a>
             <div class="flex items-center gap-6">
                 <div class="hidden lg:flex items-center gap-2 text-[10px] font-bold text-slate-500 uppercase tracking-widest">
-                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-                    Authorized Distribution
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    Official Authorized Distributor
                 </div>
-                <a href="https://mwebora.com/12200/207/7/?" class="text-[10px] font-black uppercase tracking-widest text-accent border border-amber-500/30 px-6 py-2 rounded-full hover:bg-amber-500 hover:text-black transition-all">Order Now</a>
+                <a href="https://mwebora.com/12200/207/7/?" class="text-[9px] font-black uppercase tracking-widest text-accent border border-amber-500/30 px-5 py-2 rounded-full hover:bg-amber-500 hover:text-black transition-all">Order Online</a>
             </div>
         </div>
     </header>
 
     <main>
-        <!-- Secção Hero - Título Ajustado e Alinhado -->
+        <!-- Hero Section - Sem Seção de Preços, Foco em Título + Kit Image + Texto -->
         <section class="relative pt-12 md:pt-24 pb-20 md:pb-32 overflow-hidden border-b border-white/5">
             <div class="container mx-auto px-6 relative z-10 max-w-7xl">
-                <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 hero-content">
+                <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-24 hero-content">
                     
-                    <!-- Coluna de Texto e Acção -->
+                    <!-- Coluna de Texto e CTAs -->
                     <div class="w-full lg:w-3/5 text-center lg:text-left reveal active">
-                        <h1 class="hero-title text-5xl md:text-7xl lg:text-8xl font-black mb-6 leading-[0.9] tracking-tighter text-white uppercase">
-                            Reclaim Your <span class="text-accent">Primal Edge.</span>
+                        <h1 class="hero-title text-white uppercase mb-8">
+                            Reclaim Your <br class="hidden lg:block"> <span class="text-accent">Primal Drive.</span>
                         </h1>
 
-                        <div class="hero-badge inline-flex items-center gap-3 bg-amber-500/10 border border-amber-500/20 rounded-full px-5 py-2 mb-10">
-                            <i data-feather="check" class="w-4 h-4 text-accent"></i>
-                            <span class="text-[10px] font-black uppercase tracking-[0.2em] text-accent">Official Authorized Distributor</span>
-                        </div>
-                        
-                        <!-- Mobile Product Kit (Request: Alinhamento Mobile entre título e CTA) -->
+                        <!-- Kit Image Mobile (Sombra 3D Conforme Solicitado) -->
                         <div class="hero-image-mobile hidden float-animation">
-                            <img src="images/imgi_4_kit-6.png" onerror="this.src='https://via.placeholder.com/400x300/0f172a/fbbf24?text=SteelPower+Kit'" alt="SteelPower Kit Mobile" class="w-full drop-shadow-[0_0_40px_rgba(251,191,36,0.2)]">
+                            <img src="images/imgi_4_kit-6.png" onerror="this.src='https://via.placeholder.com/400x300/0f172a/fbbf24?text=SteelPower+Kit'" alt="SteelPower Kit" class="w-full product-shadow-3d">
                         </div>
 
-                        <!-- Grupo de CTAs Estratégicos -->
-                        <div class="hero-cta-group flex flex-col sm:flex-row gap-4 mb-10 w-full max-w-xl mx-auto lg:mx-0">
-                            <a href="https://mwebora.com/12200/207/7/?" class="cta-yellow flex-1 flex items-center justify-center gap-3 px-8 py-5 rounded-2xl font-black uppercase tracking-widest text-sm group">
+                        <!-- Strategic 2-Button Group -->
+                        <div class="hero-cta-group flex flex-col sm:flex-row gap-4 mb-12 w-full max-w-xl mx-auto lg:mx-0">
+                            <a href="https://mwebora.com/12200/207/7/?" class="cta-yellow flex-1 flex items-center justify-center gap-3 px-8 py-5 rounded-2xl font-black uppercase tracking-widest text-xs group">
                                 <span>ORDER DIRECT - 38% OFF</span>
-                                <i data-feather="shopping-cart" class="w-5 h-5 group-hover:rotate-12 transition-transform"></i>
+                                <i data-feather="shopping-cart" class="w-4 h-4 group-hover:rotate-12 transition-transform"></i>
                             </a>
-                            <a href="https://mwebora.com/12200/207/3/?" class="cta-vsl flex-1 flex items-center justify-center gap-3 px-8 py-5 rounded-2xl font-black uppercase tracking-widest text-sm group">
+                            <a href="https://mwebora.com/12200/207/3/?" class="cta-vsl flex-1 flex items-center justify-center gap-3 px-8 py-5 rounded-2xl font-black uppercase tracking-widest text-xs group">
                                 <span>WATCH VIDEO GUIDE</span>
-                                <i data-feather="play-circle" class="w-5 h-5"></i>
+                                <i data-feather="play-circle" class="w-4 h-4"></i>
                             </a>
                         </div>
 
                         <p class="hero-desc text-lg md:text-xl text-slate-400 leading-relaxed font-medium max-w-xl mx-auto lg:mx-0">
-                            Designed for high-performance men who refuse to settle for average. SteelPower is the science-based protocol for metabolic energy and peak physical drive.
+                            The era of mediocrity is over. SteelPower is the definitive laboratory-grade protocol engineered for high-performance men who demand elite metabolic vitality and peak daily drive.
                         </p>
                     </div>
 
-                    <!-- Imagem Desktop (Kit 6 Potes) -->
+                    <!-- Kit Image Desktop (Com Sombra Profunda) -->
                     <div class="hidden lg:block w-full lg:w-2/5 reveal active">
                         <div class="relative float-animation">
-                            <div class="absolute inset-0 bg-amber-500/10 rounded-full blur-[120px] opacity-40"></div>
-                            <img src="images/imgi_4_kit-6.png" onerror="this.src='https://via.placeholder.com/500x400/0f172a/fbbf24?text=SteelPower+Kit'" alt="SteelPower Kit Desktop" class="relative z-10 w-full max-w-[520px] mx-auto drop-shadow-2xl">
+                            <div class="absolute inset-0 bg-amber-500/10 rounded-full blur-[140px] opacity-40"></div>
+                            <img src="images/imgi_4_kit-6.png" onerror="this.src='https://via.placeholder.com/500x400/0f172a/fbbf24?text=SteelPower+Kit'" alt="SteelPower Kit Desktop" class="relative z-10 w-full max-w-[550px] mx-auto product-shadow-3d">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Factos Estratégicos e Congruência Visual -->
+        <!-- Strategic Content & Facts -->
         <section class="py-24 bg-black/40 border-b border-white/5">
             <div class="container mx-auto px-6 max-w-7xl">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
                     <div class="reveal">
-                        <h2 class="text-3xl md:text-5xl font-black text-white mb-8 tracking-tighter leading-tight uppercase">The Modern <span class="text-accent">Vitality Crisis.</span></h2>
+                        <h2 class="text-3xl md:text-5xl font-black text-white mb-8 tracking-tighter leading-tight uppercase">THE MODERN MALE <span class="text-accent">VITALITY CRISIS.</span></h2>
                         <p class="text-base md:text-lg text-slate-400 leading-relaxed mb-6">
-                            Environmental factors and high-stress lifestyles are quietly eroding performance. Most men simply accept a slow decline in their energy and focus as "aging."
+                            Environmental factors, high-stress lifestyles, and critical nutritional gaps are eroding performance across the United States. Most men simply accept a slow decline as "aging."
                         </p>
                         <p class="text-base md:text-lg text-slate-400 leading-relaxed mb-10">
-                            SteelPower is the elite response. A laboratory-grade matrix designed to support cellular health and cardiovascular efficiency when you need it most.
+                            SteelPower is the response. A laboratory-grade matrix designed to saturate your system with the precursors needed for elite energy, vascular health, and cognitive focus.
                         </p>
                         <div class="flex flex-wrap gap-8 opacity-60">
                             <div class="flex items-center gap-2">
-                                <i data-feather="shield" class="w-4 h-4 text-emerald-500"></i>
-                                <span class="text-[9px] font-black uppercase tracking-widest text-white">Lab Verified</span>
+                                <i data-feather="shield" class="w-5 h-5 text-emerald-500"></i>
+                                <span class="text-[10px] font-black uppercase tracking-widest text-white">Lab Verified</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <i data-feather="award" class="w-4 h-4 text-emerald-500"></i>
-                                <span class="text-[9px] font-black uppercase tracking-widest text-white">GMP Quality</span>
+                                <i data-feather="award" class="w-5 h-5 text-emerald-500"></i>
+                                <span class="text-[10px] font-black uppercase tracking-widest text-white">GMP Quality</span>
                             </div>
                         </div>
                     </div>
                     
                     <div class="reveal">
-                        <div class="glass-card p-8 md:p-12 rounded-[2.5rem] border-white/10 shadow-xl">
-                            <h3 class="text-xl font-black text-white mb-8 uppercase tracking-tight border-l-4 border-accent pl-5">Strategic Performance Protocol</h3>
-                            <div class="space-y-10">
+                        <div class="glass-card p-10 md:p-12 rounded-[2.5rem] border-white/10 shadow-2xl">
+                            <h3 class="text-xl font-black text-white mb-10 uppercase tracking-tight border-l-4 border-accent pl-6">Strategic Protocol Facts</h3>
+                            <div class="space-y-12">
                                 <div class="flex gap-6">
                                     <div class="text-accent font-black text-sm">01</div>
                                     <div>
                                         <p class="text-white font-extrabold text-base mb-1 uppercase tracking-tight">Nitric Oxide Support</p>
-                                        <p class="text-slate-500 text-sm leading-relaxed">Optimizing blood flow for superior physical performance and recovery.</p>
+                                        <p class="text-slate-500 text-sm leading-relaxed">Maximum support for blood flow and nutrient delivery to muscle tissues.</p>
                                     </div>
                                 </div>
                                 <div class="flex gap-6">
                                     <div class="text-accent font-black text-sm">02</div>
                                     <div>
                                         <p class="text-white font-extrabold text-base mb-1 uppercase tracking-tight">Mitochondrial Fuel</p>
-                                        <p class="text-slate-500 text-sm leading-relaxed">Direct reinforcement of energy production at a cellular level for sustained daily power.</p>
+                                        <p class="text-slate-500 text-sm leading-relaxed">Direct reinforcement of cellular energy production for sustained daily power.</p>
                                     </div>
                                 </div>
                             </div>
@@ -224,38 +229,38 @@
             </div>
         </section>
 
-        <!-- Prova Social e Conversão Final -->
+        <!-- Social Proof & Compliance -->
         <section class="py-24 border-b border-white/5">
             <div class="container mx-auto px-6 max-w-7xl">
                 <div class="text-center mb-16 reveal">
-                    <p class="text-accent font-black text-[10px] tracking-[0.4em] uppercase mb-4">Real US Results</p>
-                    <h2 class="text-4xl md:text-6xl font-black text-white mb-6 tracking-tighter uppercase italic">12,400+ Lives Optimized.</h2>
+                    <p class="text-accent font-black text-[10px] tracking-[0.4em] uppercase mb-4">Community Proof</p>
+                    <h2 class="text-4xl md:text-6xl font-black text-white mb-6 tracking-tighter uppercase italic">12,400+ LIVES OPTIMIZED.</h2>
                     <div class="flex justify-center items-center gap-1.5 text-accent">
-                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                        <span class="text-white font-black text-xs ml-4 tracking-widest uppercase opacity-60">Verified Feedback</span>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <span class="text-white font-black text-[10px] ml-4 tracking-widest uppercase opacity-60">Verified Lab Feedback</span>
                     </div>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20 reveal">
-                    <div class="glass-card p-10 rounded-[2rem] hover:border-accent/20 transition-all">
+                    <div class="glass-card p-10 rounded-[2rem] hover:border-accent/20 transition-all flex flex-col justify-between">
                         <p class="text-slate-300 font-medium italic text-base leading-relaxed mb-8">"I've explored dozens of protocols. SteelPower is the first one where the mental energy felt consistent from week 1."</p>
                         <div class="flex items-center gap-4">
                             <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center font-black text-accent text-[8px]">RK</div>
                             <p class="text-white font-black text-[10px] uppercase tracking-widest">Robert K.</p>
                         </div>
                     </div>
-                    <div class="glass-card p-10 rounded-[2rem] hover:border-accent/20 transition-all">
+                    <div class="glass-card p-10 rounded-[2rem] hover:border-accent/20 transition-all flex flex-col justify-between">
                         <p class="text-slate-300 font-medium italic text-base leading-relaxed mb-8">"At 52, maintaining drive is a challenge. This formula has essentially restored the physical stamina of my thirties."</p>
                         <div class="flex items-center gap-4">
                             <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center font-black text-accent text-[8px]">ML</div>
                             <p class="text-white font-black text-[10px] uppercase tracking-widest">Marcus L.</p>
                         </div>
                     </div>
-                    <div class="glass-card p-10 rounded-[2rem] hover:border-accent/20 transition-all">
+                    <div class="glass-card p-10 rounded-[2rem] hover:border-accent/20 transition-all flex flex-col justify-between">
                         <p class="text-slate-300 font-medium italic text-base leading-relaxed mb-8">"Shipment arrived in 3 days. Clean focus, no crash, and noticeably better recovery times after heavy sessions."</p>
                         <div class="flex items-center gap-4">
                             <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center font-black text-accent text-[8px]">BT</div>
@@ -265,12 +270,12 @@
                 </div>
 
                 <div class="text-center reveal">
-                    <a href="https://mwebora.com/12200/207/7/?" class="cta-yellow inline-flex items-center justify-center gap-8 px-16 py-6 rounded-2xl font-black uppercase tracking-[0.2em] text-sm group">
+                    <a href="https://mwebora.com/12200/207/7/?" class="cta-yellow inline-flex items-center justify-center gap-8 px-16 py-7 rounded-2xl font-black uppercase tracking-[0.3em] text-sm group shadow-2xl">
                         <span>ACTIVATE YOUR PROTOCOL NOW</span>
-                        <i data-feather="arrow-right" class="w-5 h-5"></i>
+                        <i data-feather="arrow-right" class="w-6 h-6"></i>
                     </a>
-                    <div class="mt-8 flex justify-center gap-6 opacity-30 grayscale contrast-125">
-                        <i data-feather="shield" class="w-6 h-6"></i>
+                    <div class="mt-8 flex justify-center gap-8 opacity-20 grayscale">
+                        <i data-feather="lock" class="w-6 h-6"></i>
                         <i data-feather="truck" class="w-6 h-6"></i>
                         <i data-feather="award" class="w-6 h-6"></i>
                     </div>
@@ -279,19 +284,19 @@
         </section>
     </main>
 
-    <!-- Rodapé Em conformidade com Google Ads 2026 -->
-    <footer class="bg-[#000] text-slate-700 py-20 border-t border-white/5">
+    <!-- Footer - Google Ads Compliance 2026 -->
+    <footer class="bg-[#000] text-slate-700 py-24 border-t border-white/5">
         <div class="container mx-auto px-6 text-center max-w-7xl">
-            <div class="mb-12">
+            <div class="mb-16">
                 <div class="flex items-center justify-center gap-3 mb-4">
                     <img src="images/imgi_9_logo.svg" alt="SteelPower Logo" class="h-6 w-auto opacity-40">
-                    <span class="font-black tracking-tighter text-xl text-white uppercase">Steel<span class="text-accent">Power</span></span>
+                    <span class="font-black tracking-tighter text-2xl text-white uppercase">Steel<span class="text-accent">Power</span></span>
                 </div>
                 <p class="text-[9px] font-black text-accent uppercase tracking-[0.4em] mb-4">Official Authorized Laboratory Distributor</p>
-                <p class="text-[9px] tracking-widest opacity-60 uppercase">19655 E 35th Drive, Suite 100, Aurora, CO 80011, USA</p>
+                <p class="text-[9px] tracking-widest opacity-50 uppercase">19655 E 35th Drive, Suite 100, Aurora, CO 80011, USA</p>
             </div>
             
-            <div class="flex justify-center flex-wrap gap-8 mb-16 text-[9px] font-black uppercase tracking-[0.3em]">
+            <div class="flex justify-center flex-wrap gap-10 mb-20 text-[9px] font-black uppercase tracking-[0.3em]">
                 <button onclick="openModal('terms')" class="hover:text-accent">Terms</button>
                 <button onclick="openModal('privacy')" class="hover:text-accent">Privacy</button>
                 <button onclick="openModal('shipping')" class="hover:text-accent">Shipping</button>
@@ -300,23 +305,23 @@
             </div>
 
             <div class="max-w-4xl mx-auto text-[9px] leading-relaxed opacity-20 pt-10 border-t border-white/5 space-y-6">
-                <p>The statements made on this website have not been evaluated by the Food and Drug Administration. This product is a dietary supplement and is not intended to diagnose, treat, cure, or prevent any disease. Results are individual and vary by user. As an authorized distributor, we provide genuine products sourced directly from the production laboratory.</p>
+                <p>The statements made on this website have not been evaluated by the FDA. This product is a dietary supplement and is not intended to diagnose, treat, cure, or prevent any disease. Results are individual and vary by user. As an authorized distributor, we provide genuine products sourced directly from the production laboratory.</p>
                 <p>&copy; 2026 SteelPower Laboratory Distribution. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Modal de Políticas -->
+    <!-- Modais de Políticas -->
     <div id="policy-modal" class="fixed inset-0 z-[100] hidden" role="dialog" aria-modal="true">
         <div class="fixed inset-0 bg-black/98 backdrop-blur-xl" onclick="closeModal()"></div>
         <div class="fixed inset-0 z-10 overflow-y-auto">
             <div class="flex min-h-full items-center justify-center p-6">
-                <div class="relative w-full max-w-2xl bg-[#0a0f1d] border border-white/10 rounded-[2rem] flex flex-col overflow-hidden shadow-2xl">
+                <div class="relative w-full max-w-xl bg-[#0a0f1d] border border-white/10 rounded-[2.5rem] flex flex-col overflow-hidden shadow-2xl">
                     <div class="px-8 py-6 border-b border-white/5 flex justify-between items-center bg-black/40">
                         <h3 class="font-black text-white uppercase tracking-widest text-[9px]" id="modal-title">Document</h3>
                         <button onclick="closeModal()" class="p-2 hover:bg-white/10 rounded-full transition-colors text-slate-500 hover:text-white"><i data-feather="x" class="w-5 h-5"></i></button>
                     </div>
-                    <div class="p-10 overflow-y-auto max-h-[60vh] text-xs text-slate-400 leading-relaxed" id="modal-content-area"></div>
+                    <div class="p-10 overflow-y-auto max-h-[50vh] text-xs text-slate-400 leading-relaxed" id="modal-content-area"></div>
                     <div class="px-8 py-6 bg-black/40 border-t border-white/5 flex justify-end">
                         <button onclick="closeModal()" class="bg-accent text-black px-8 py-3 rounded-xl text-[9px] font-black uppercase tracking-widest">Close Window</button>
                     </div>
@@ -328,7 +333,6 @@
     <script>
         feather.replace();
 
-        // Reveal Animation Scroll
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) entry.target.classList.add('active');
@@ -336,17 +340,16 @@
         }, { threshold: 0.1 });
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-        // Modal Controls
         const modal = document.getElementById('policy-modal');
         const modalTitle = document.getElementById('modal-title');
         const modalContent = document.getElementById('modal-content-area');
 
         const modalData = {
-            terms: { title: "Terms of Service", content: "<p>Standard legal terms apply to your use of this authorized distributor portal. Adult use only.</p>" },
-            privacy: { title: "Privacy Policy", content: "<p>We protect your data with 256-bit encryption. Your information is never shared with third-party networks.</p>" },
-            shipping: { title: "Shipping Policy", content: "<p>Orders ship within 48 business hours. Delivery typically takes 3-5 days in the United States.</p>" },
-            returns: { title: "Refund Policy", content: "<p>Our 60-day guarantee is absolute. Contact support for simple return instructions.</p>" },
-            disclaimer: { title: "FDA Disclaimer", content: "<p>SteelPower is a dietary supplement and not intended to replace professional medical advice.</p>" }
+            terms: { title: "Terms of Service", content: "<p>Standard legal terms apply. Adult use only (18+).</p>" },
+            privacy: { title: "Privacy Policy", content: "<p>We protect your data with 256-bit encryption. We never share your data.</p>" },
+            shipping: { title: "Shipping Policy", content: "<p>Orders ship within 48 business hours. Delivery typically takes 3-5 days in the US.</p>" },
+            returns: { title: "Refund Policy", content: "<p>Our 60-day guarantee is absolute. Contact support for instructions.</p>" },
+            disclaimer: { title: "FDA Disclaimer", content: "<p>SteelPower is a dietary supplement and not intended to replace medical advice. Consult your doctor before use.</p>" }
         };
 
         function openModal(type) {
